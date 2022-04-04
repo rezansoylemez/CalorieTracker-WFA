@@ -30,7 +30,6 @@ namespace SaglikliYER
         {
             this.Close();
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
@@ -137,9 +136,7 @@ namespace SaglikliYER
                     return "Orta Şifre..";
                 }
             }
-            
         }
-
         private void btnQuestions_Click(object sender, EventArgs e)
         {
             MessageBox.Show("En az 6 karakter." +
@@ -171,26 +168,6 @@ namespace SaglikliYER
                 txtPassword2.PasswordChar = '*';
                 count = true;
             }
-        }
-        public string PasswordStrengthCheck(string password)
-        {
-            string passwordStrength = "";
-            if (!string.IsNullOrEmpty(password) && password.Length >= 4)
-            {
-                if (password.Any(char.IsUpper) && password.Any(char.IsLower) && password.Any(char.IsLetter) && password.Any(char.IsDigit) && password.Any(char.IsSymbol) && password.Length <= 6)
-                {
-                    passwordStrength = "Strong Password..";
-                }
-                else if (password.Any(char.IsUpper) && password.Any(char.IsDigit) && password.Any(char.IsLetter) && password.Length <= 4)
-                {
-                    passwordStrength = "Medium Password..";
-                }
-                else
-                {
-                    passwordStrength = "Weak Password..";
-                }
-            }
-            return passwordStrength;
         }
     }
 }

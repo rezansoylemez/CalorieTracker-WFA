@@ -112,6 +112,7 @@ namespace SaglikliYER
             // 
             // dtpMealDate
             // 
+            this.dtpMealDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpMealDate.Location = new System.Drawing.Point(106, 61);
             this.dtpMealDate.Name = "dtpMealDate";
             this.dtpMealDate.Size = new System.Drawing.Size(140, 22);

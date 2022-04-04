@@ -147,6 +147,7 @@ namespace SaglikliYER
             // 
             // dateTimeBirth
             // 
+            this.dateTimeBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeBirth.Location = new System.Drawing.Point(110, 169);
             this.dateTimeBirth.Name = "dateTimeBirth";
             this.dateTimeBirth.Size = new System.Drawing.Size(125, 22);

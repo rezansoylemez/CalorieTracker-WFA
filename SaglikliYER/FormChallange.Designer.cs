@@ -130,7 +130,7 @@ namespace SaglikliYER
             // columnHeader8
             // 
             this.columnHeader8.Text = "Total Calorie";
-            this.columnHeader8.Width = 117;
+            this.columnHeader8.Width = 92;
             // 
             // columnHeader7
             // 
@@ -139,8 +139,8 @@ namespace SaglikliYER
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Name";
-            this.columnHeader6.Width = 83;
+            this.columnHeader6.Text = "E-mail";
+            this.columnHeader6.Width = 120;
             // 
             // listView2
             // 

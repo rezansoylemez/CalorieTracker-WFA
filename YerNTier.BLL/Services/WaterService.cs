@@ -14,22 +14,21 @@ namespace YerNTier.BLL.Services
         {
             waterRepository = new WaterRepository();
         }
-
-        //form açılırken içilen suyu yazdırmak
         public int WaterQuantity(int _userID)
         {
             if (_userID > 0)
                 return waterRepository.GetWater(_userID);
-            else throw new Exception("UserId hatalı");
+            else throw new Exception("Please check your UserID.");
         }
-
-        //formu kapatırken eklenen suyu database aktarmak
         public bool UpdateQuantity(int _userID, int _quantity)
         {
-            if (_userID > 0 && _quantity >= 0)
-                return waterRepository.UpdateWater(_userID, _quantity);
-            else throw new Exception("UserID ve Quantity Hatası");
+            if (_userID > 0)
+            {
+                if (_quantity >= 0)
+                    return waterRepository.UpdateWater(_userID, _quantity);
+                else throw new Exception("Please check your quantity.");
+            }
+            else throw new Exception("Please check your UserID.");
         }
-
     }
 }

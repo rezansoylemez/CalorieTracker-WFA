@@ -16,11 +16,6 @@ namespace YerNTier.DAL.Repositories
             dbContext = new YerDBContext();
             passwordRepository = new PasswordRepository();
         }
-        /// <summary>
-        /// DUser tipinde email alan login kontrolu yapan method. kontrol dogru ise çalisacak method
-        /// </summary>
-        /// <param name="_email"></param>
-        /// <returns></returns>
         public DUser CheckByUserIdAndPassId(string _email,string _pass)
         {
             DUser dUser = dbContext.DUsers.Where(x => x.Email == _email).FirstOrDefault();
@@ -38,20 +33,18 @@ namespace YerNTier.DAL.Repositories
             }
             else return null;
         }
-        /// <summary>
-        /// User tipinde user bilgilerini alıp insert eden method. Serivcesda null gelme durumları kontrol edilecek
-        /// </summary>
-        /// <param name="duser"></param>
-        /// <returns></returns>
+        
         public int AddUser(DUser _duser)
         {
             dbContext.DUsers.Add(_duser);
             return dbContext.SaveChanges();
-        } 
-        /// <summary>
-        /// Challenge ekranı için User tipinde liste dönen method.
-        /// </summary>
-        /// <returns></returns>
+        }
+        public void userUpdateForLevel(int userID, DUser dUser)
+        {
+            DUser oldUser = GetUserByUserID(userID);
+            oldUser.Level = dUser.Level;
+            dbContext.SaveChanges();
+        }
         public List<DUser> GetUserForChallenge(string _wish)
         {
             return dbContext.DUsers.Where(a=>a.Wish==_wish).ToList();
@@ -60,12 +53,6 @@ namespace YerNTier.DAL.Repositories
         {
             return dbContext.DUsers.Where(a => a.Wish == _wish && a.Email.Contains(text)).ToList();
         }
-        
-        /// <summary>
-        /// UserId Alan User tipinde user bilgisi dönen method
-        /// </summary>
-        /// <param name="_userID"></param>
-        /// <returns></returns>
         public DUser GetUserByUserID(int _userID)
         {
             DUser dUser = dbContext.DUsers.Find(_userID);

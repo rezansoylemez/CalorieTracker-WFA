@@ -20,7 +20,7 @@ namespace YerNTier.Model.Entities
         public virtual UserDetail UserDetail { get; set; }
         public string Email { get; set; }
         public string Wish { get; set; }
-
+        public int Level { get; set; } = 1;
         public DateTime SubDate { get; set; } = DateTime.Now;
         public virtual ICollection<Meal> Meals { get; set; }
         public virtual ICollection<Water> Waters { get; set; }

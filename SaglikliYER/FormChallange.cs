@@ -126,5 +126,10 @@ namespace SaglikliYER
                 listView2.Items.Add(listVItem);
             }
         }
+
+        private void FormChallange_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }

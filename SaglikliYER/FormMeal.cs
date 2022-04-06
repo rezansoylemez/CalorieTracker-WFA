@@ -39,36 +39,43 @@ namespace SaglikliYER
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0].Tag == null)
+            try
             {
-                MessageBox.Show("Lütfen Food seçiniz. ");
-                return;
+                if (listView1.SelectedItems[0].Tag == null)
+                {
+                    MessageBox.Show("Please choose a food.");
+                    return;
+                }
+
+                Food food2 = foodService.GetByFoodIdCheck((int)cmbFood.SelectedValue);
+
+                int k = 0;
+
+                if ((Portion)cmbPortion.SelectedIndex == Portion.Gram)
+                {
+                    k = 1;
+                }
+                else k = 400;
+
+                EatenFood food = new EatenFood();
+                food.FoodID = food2.FoodID;
+                food.EatenCategoryID = food2.CategoryID;
+                food.EatenFoodName = food2.FoodName;
+                food.EatenPortion = (Portion)cmbPortion.SelectedIndex;
+                food.EatenQuantity = (decimal)nudQuantity.Value;
+                food.EatenProtein = (k * food.EatenQuantity * food2.Protein) / 100;
+                food.EatenColorie = (k * food.EatenQuantity * food2.Calorie) / 100;
+
+                mealService.Update((int)listView1.SelectedItems[0].Tag, food);
+
+                MessageBox.Show("Food is updated.");
+
+                FillListview();
             }
-
-            Food food2 = foodService.GetByFoodIdCheck((int)cmbFood.SelectedValue);
-
-            int k = 0;
-
-            if ((Portion)cmbPortion.SelectedIndex == Portion.Gram)
+            catch (Exception ex)
             {
-                k = 1;
+                MessageBox.Show(ex.Message);
             }
-            else k = 400;
-
-            EatenFood food = new EatenFood();
-            food.FoodID = food2.FoodID;
-            food.EatenCategoryID = food2.CategoryID;
-            food.EatenFoodName = food2.FoodName;
-            food.EatenPortion = (Portion)cmbPortion.SelectedIndex;
-            food.EatenQuantity = (decimal)nudQuantity.Value;
-            food.EatenProtein = (k * food.EatenQuantity * food2.Protein) / 100;
-            food.EatenColorie = (k * food.EatenQuantity * food2.Calorie) / 100;
-
-            mealService.Update((int)listView1.SelectedItems[0].Tag,food);
-
-            MessageBox.Show("Eaten Food Yenilendi");
-
-            FillListview();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -79,19 +86,19 @@ namespace SaglikliYER
                 meal.DUserID = userID;
                 if (comboBox1.SelectedItem == null)
                 {
-                    MessageBox.Show("Lütfen bir meal seçiniz ");
+                    MessageBox.Show("Please choose a meal.");
                     return;
                 }
                 meal.MealName = comboBox1.SelectedItem.ToString();
                 meal.MealDate = dtpMealDate.Value;
                 mealService.Insert(meal);
 
-                MessageBox.Show("Meal eklendi");
+                MessageBox.Show("Meal is added.");
 
                 lbDoldur();
                 cmbDoldur();
-            } 
-            catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -159,40 +166,47 @@ namespace SaglikliYER
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedValue == null) 
+            try
             {
-                MessageBox.Show("Lütfen Meal seçiniz");
-                return;
+                if (listBox1.SelectedValue == null)
+                {
+                    MessageBox.Show("Please choose a meal from meal list.");
+                    return;
+                }
+
+                int selMealID = (int)listBox1.SelectedValue;
+                Meal meal = mealService.GetByMealId(selMealID);
+
+                Food food2 = foodService.GetByFoodIdCheck((int)cmbFood.SelectedValue);
+
+                int k = 0;
+
+                if ((Portion)cmbPortion.SelectedIndex == Portion.Gram)
+                {
+                    k = 1;
+                }
+                else k = 400;
+
+                EatenFood food = new EatenFood();
+                food.FoodID = food2.FoodID;
+                food.EatenCategoryID = food2.CategoryID;
+                food.EatenFoodName = food2.FoodName;
+                food.EatenPortion = (Portion)cmbPortion.SelectedIndex;
+                food.EatenQuantity = (decimal)nudQuantity.Value;
+                food.EatenProtein = (k * food.EatenQuantity * food2.Protein) / 100;
+                food.EatenColorie = (k * food.EatenQuantity * food2.Calorie) / 100;
+
+                mealService.AddFoodsToMeals(meal, food);
+                MessageBox.Show("Food is added.");
+
+                lbDoldur();
+                cmbDoldur();
+                FillListview();
             }
-
-            int selMealID = (int)listBox1.SelectedValue;
-            Meal meal = mealService.GetByMealId(selMealID);
-
-            Food food2 = foodService.GetByFoodIdCheck((int)cmbFood.SelectedValue);
-
-            int k = 0;
-
-            if ((Portion)cmbPortion.SelectedIndex == Portion.Gram)
+            catch (Exception ex)
             {
-                k = 1;
+                MessageBox.Show(ex.Message);
             }
-            else k = 400;
-
-            EatenFood food = new EatenFood();
-            food.FoodID = food2.FoodID;
-            food.EatenCategoryID = food2.CategoryID;
-            food.EatenFoodName = food2.FoodName;
-            food.EatenPortion = (Portion)cmbPortion.SelectedIndex;
-            food.EatenQuantity = (decimal)nudQuantity.Value;
-            food.EatenProtein = (k * food.EatenQuantity * food2.Protein) / 100;
-            food.EatenColorie = (k * food.EatenQuantity * food2.Calorie) / 100;
-
-            mealService.AddFoodsToMeals(meal, food);
-            MessageBox.Show("Food eklendi");
-
-            lbDoldur();
-            cmbDoldur();
-            FillListview();
         }
 
         private void cmbFood_SelectedIndexChanged(object sender, EventArgs e)
@@ -227,7 +241,7 @@ namespace SaglikliYER
                 Meal meal = mealService.GetByMealId(Convert.ToInt32(listBox1.SelectedValue));
                 mealService.CDelete(meal);
 
-                MessageBox.Show("Meal silindi");
+                MessageBox.Show("Meal is deleted");
 
                 lbDoldur();
                 listView1.Items.Clear();
@@ -238,9 +252,13 @@ namespace SaglikliYER
         {
             EatenFood eatenFood = mealService.GetByEatenFoodId((int)listView1.SelectedItems[0].Tag);
             mealService.Delete(eatenFood);
-            MessageBox.Show("Eaten Food silindi");
+            MessageBox.Show("Food is deleted");
             FillListview();
         }
 
+        private void FormMeal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }

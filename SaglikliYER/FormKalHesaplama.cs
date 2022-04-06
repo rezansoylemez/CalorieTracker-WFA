@@ -66,5 +66,10 @@ namespace SaglikliYER
                 listView1.Items.Add(listview);
             }
         }
+
+        private void FormKalHesaplama_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }

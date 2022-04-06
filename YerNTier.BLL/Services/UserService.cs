@@ -15,48 +15,64 @@ namespace YerNTier.BLL.Services
         {
             userRepository = new UserRepository();
         }
-        /// <summary>
-        /// CheckByUserIdAndPassId methoduna email ve password girişlerini kontrol eden method
-        /// </summary>
-        /// <param name="_email"></param>
-        /// <param name="_pass"></param>
-        /// <returns></returns>
-        public DUser CheckLogin(string _email,string _pass)
+        public DUser CheckLogin(string _email, string _pass)
         {
-            if (_email=="" ||_pass=="" )
-                throw new Exception("Lütfen e-mail veya password giriniz.");
-            return userRepository.CheckByUserIdAndPassId(_email,_pass);
+            if (_email != "")
+            {
+                if (_pass != "")
+                {
+                    return userRepository.CheckByUserIdAndPassId(_email, _pass);
+                }
+                else throw new Exception("Please check your password.");
+            }
+            else throw new Exception("Please check your email.");
         }
         public int AddUser(DUser _user)
         {
             if (_user != null)
-               return userRepository.AddUser(_user);
+                return userRepository.AddUser(_user);
             else
-                throw new Exception("Lütfen kontrol edin");
+                throw new Exception("Please check your User.");
         }
         public List<DUser> GetUserForChallenge(string _wish)
         {
-            return userRepository.GetUserForChallenge(_wish);
+            if (_wish != "")
+            {
+                return userRepository.GetUserForChallenge(_wish);
+            }
+            else throw new Exception("Please check your wish.");
         }
         public List<DUser> GetUserForChallengeAndKey(string _wish, string text)
         {
-            return userRepository.GetUserForChallengeAndKey(_wish,text);
+            if (_wish != "")
+            {
+                if (text != "")
+                {
+                    return userRepository.GetUserForChallengeAndKey(_wish, text);
+                }
+                else throw new Exception("Please check your text.");
+            }
+            else throw new Exception("Please check your wish.");
         }
         public DUser GetUserByUserID(int _userID)
         {
             if (_userID > 0)
                 return userRepository.GetUserByUserID(_userID);
             else
-                throw new Exception("User Hatası");
+                throw new Exception("Please check your userID.");
         }
-
+        public void userUpdateForLevel(int userID, DUser dUser)
+        {
+            userRepository.userUpdateForLevel(userID, dUser);
+        }
+        
         public bool UserEmailIfExist(string _email)
         {
             bool sonuc= false;
             List<string> list = userRepository.GetUsersEmail();
             if (list.Contains(_email))
             {
-                throw new Exception("Böyle bir E-mail mevcut");
+                throw new Exception("This email already exist.");
                 return sonuc;
             }
             else

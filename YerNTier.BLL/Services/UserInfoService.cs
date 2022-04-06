@@ -17,11 +17,6 @@ namespace YerNTier.BLL.Services
             userInfoRepository = new UserInfoRepository();
             ticTacRepo = new TicTacRepository();
         }
-        /// <summary>
-        /// Mesaj ekleme sevice 
-        /// </summary>
-        /// <param name="_meal"></param>
-        /// <returns></returns>
         public int AddMess(UserInfo _info)
         {
             if (_info.MessageComment != null )
@@ -29,19 +24,14 @@ namespace YerNTier.BLL.Services
                 return userInfoRepository.AddMess(_info);
             }
             else
-                throw new Exception("Mesaj Bulunamadı");
+                throw new Exception("Please check your message.");
         }
-        /// <summary>
-        /// mesaj listeleme kontrol eden
-        /// </summary>
-        /// <param name="_userID"></param>
-        /// <returns></returns>
         public List<UserInfo> ShowMess(int _userID)
         {
             if (_userID > 0)
                 return userInfoRepository.ShowMess(_userID);
             else
-                throw new Exception("Mesaj listeleme hatalı");
+                throw new Exception("Please check your message.");
         }
         public bool UpdateTicTac(TicTac _ticTac)
         {
@@ -49,21 +39,21 @@ namespace YerNTier.BLL.Services
             {
                 return ticTacRepo.UpdateUserTicTac(_ticTac);
             }
-            else throw new Exception("Hata");
+            else throw new Exception("Please check your message.");
         }
         public TicTac FindByID(int _ticTac)
         {
             if (_ticTac > 0)
                 return ticTacRepo.GetByFoodID(_ticTac);
             else
-                throw new Exception("Mesaj listeleme hatalı");
+                throw new Exception("Please check your message.");
         }
         public TicTac GetTicTac(int _userID)
         {
             if (_userID > 0)
                 return ticTacRepo.ShowTicTacString(_userID);
             else
-                throw new Exception("Mesaj listeleme hatalı");
+                throw new Exception("Please check your message.");
         }
     }
 }

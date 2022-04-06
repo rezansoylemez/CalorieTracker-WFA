@@ -250,6 +250,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox1);
             this.Name = "FormChallange";
             this.Text = "FormChallange";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormChallange_FormClosed);
             this.Load += new System.EventHandler(this.FormChallange_Load);
             this.groupBox6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);

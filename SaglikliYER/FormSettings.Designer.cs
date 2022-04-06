@@ -45,17 +45,17 @@ namespace SaglikliYER
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnUpdateUser = new System.Windows.Forms.Button();
             this.txtWeight = new System.Windows.Forms.TextBox();
+            this.labelMail = new System.Windows.Forms.Label();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelAge = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
-            this.labelMail = new System.Windows.Forms.Label();
-            this.labelAge = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -221,6 +221,15 @@ namespace SaglikliYER
             this.txtWeight.Size = new System.Drawing.Size(100, 20);
             this.txtWeight.TabIndex = 0;
             // 
+            // labelMail
+            // 
+            this.labelMail.AutoSize = true;
+            this.labelMail.Location = new System.Drawing.Point(79, 30);
+            this.labelMail.Name = "labelMail";
+            this.labelMail.Size = new System.Drawing.Size(50, 13);
+            this.labelMail.TabIndex = 0;
+            this.labelMail.Text = "E-Mail :";
+            // 
             // txtHeight
             // 
             this.txtHeight.Location = new System.Drawing.Point(82, 124);
@@ -245,6 +254,15 @@ namespace SaglikliYER
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Weight";
+            // 
+            // labelAge
+            // 
+            this.labelAge.AutoSize = true;
+            this.labelAge.Location = new System.Drawing.Point(79, 105);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(37, 13);
+            this.labelAge.TabIndex = 0;
+            this.labelAge.Text = "Age :";
             // 
             // label3
             // 
@@ -301,24 +319,6 @@ namespace SaglikliYER
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // labelMail
-            // 
-            this.labelMail.AutoSize = true;
-            this.labelMail.Location = new System.Drawing.Point(79, 30);
-            this.labelMail.Name = "labelMail";
-            this.labelMail.Size = new System.Drawing.Size(50, 13);
-            this.labelMail.TabIndex = 0;
-            this.labelMail.Text = "E-Mail :";
-            // 
-            // labelAge
-            // 
-            this.labelAge.AutoSize = true;
-            this.labelAge.Location = new System.Drawing.Point(79, 105);
-            this.labelAge.Name = "labelAge";
-            this.labelAge.Size = new System.Drawing.Size(37, 13);
-            this.labelAge.TabIndex = 0;
-            this.labelAge.Text = "Age :";
-            // 
             // FormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,6 +330,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSettings";
             this.Load += new System.EventHandler(this.FormSettings_Load);
             this.groupBox1.ResumeLayout(false);

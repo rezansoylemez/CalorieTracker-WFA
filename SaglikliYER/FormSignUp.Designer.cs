@@ -474,6 +474,7 @@ namespace SaglikliYER
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSignUp";
             ((System.ComponentModel.ISupportInitialize)(this.numKilo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoy)).EndInit();

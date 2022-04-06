@@ -365,6 +365,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
             this.Name = "FormSuEkleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSuEkleme";
             this.Load += new System.EventHandler(this.FormSuEkleme_Load);
             this.groupBox1.ResumeLayout(false);

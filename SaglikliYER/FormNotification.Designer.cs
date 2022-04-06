@@ -51,7 +51,6 @@ namespace SaglikliYER
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            
             // 
             // columnHeader3
             // 
@@ -112,6 +111,7 @@ namespace SaglikliYER
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormNotification";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNotification";
             this.Load += new System.EventHandler(this.FormNotification_Load);
             this.groupBox1.ResumeLayout(false);

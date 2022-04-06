@@ -262,6 +262,7 @@ namespace SaglikliYER
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.KeyPreview = true;
             this.Name = "FormFeedMonster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormFeedMonster";
             this.Load += new System.EventHandler(this.FormFeedMonster_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormFeedMonster_KeyDown);

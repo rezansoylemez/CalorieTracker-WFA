@@ -73,14 +73,14 @@ namespace SaglikliYER
             // smSaglikliYer
             // 
             this.smSaglikliYer.Name = "smSaglikliYer";
-            this.smSaglikliYer.Size = new System.Drawing.Size(180, 22);
+            this.smSaglikliYer.Size = new System.Drawing.Size(165, 22);
             this.smSaglikliYer.Text = "What is SocialFit?";
             this.smSaglikliYer.Click += new System.EventHandler(this.smSaglikliYer_Click);
             // 
             // smEkibimiz
             // 
             this.smEkibimiz.Name = "smEkibimiz";
-            this.smEkibimiz.Size = new System.Drawing.Size(180, 22);
+            this.smEkibimiz.Size = new System.Drawing.Size(165, 22);
             this.smEkibimiz.Text = "Our Team";
             this.smEkibimiz.Click += new System.EventHandler(this.smEkibimiz_Click);
             // 
@@ -96,14 +96,14 @@ namespace SaglikliYER
             // msKaratay
             // 
             this.msKaratay.Name = "msKaratay";
-            this.msKaratay.Size = new System.Drawing.Size(180, 22);
+            this.msKaratay.Size = new System.Drawing.Size(147, 22);
             this.msKaratay.Text = "Karatay Diet";
             this.msKaratay.Click += new System.EventHandler(this.msKaratay_Click);
             // 
             // msKetojenik
             // 
             this.msKetojenik.Name = "msKetojenik";
-            this.msKetojenik.Size = new System.Drawing.Size(180, 22);
+            this.msKetojenik.Size = new System.Drawing.Size(147, 22);
             this.msKetojenik.Text = "Ketojenik Diet";
             this.msKetojenik.Click += new System.EventHandler(this.msKetojenik_Click);
             // 
@@ -183,7 +183,6 @@ namespace SaglikliYER
             this.btnSesAc.Size = new System.Drawing.Size(59, 44);
             this.btnSesAc.TabIndex = 17;
             this.btnSesAc.UseVisualStyleBackColor = true;
-            this.btnSesAc.Click += new System.EventHandler(this.btnSesAc_Click);
             // 
             // pictureBox1
             // 
@@ -209,8 +208,8 @@ namespace SaglikliYER
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnKacKalori);
             this.Name = "FormGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
-            this.Load += new System.EventHandler(this.FormGiris_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

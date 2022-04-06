@@ -249,6 +249,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormChallange";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormChallange";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormChallange_FormClosed);
             this.Load += new System.EventHandler(this.FormChallange_Load);

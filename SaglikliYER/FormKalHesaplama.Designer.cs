@@ -145,6 +145,7 @@ namespace SaglikliYER
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.listView1);
             this.Name = "FormKalHesaplama";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKalHesaplama";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormKalHesaplama_FormClosed);
             this.Load += new System.EventHandler(this.FormKalHesaplama_Load);

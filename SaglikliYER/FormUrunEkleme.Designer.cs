@@ -388,6 +388,7 @@ namespace SaglikliYER
             this.ClientSize = new System.Drawing.Size(639, 502);
             this.Controls.Add(this.groupBox2);
             this.Name = "FormUrunEkleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUrunEkleme";
             this.Load += new System.EventHandler(this.FormUrunEkleme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudProtein)).EndInit();

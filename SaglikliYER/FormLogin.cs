@@ -23,6 +23,14 @@ namespace SaglikliYER
             userService = new UserService();
             passwordService = new PasswordService();
         }
+        string langue;
+        public FormLogin(string _langue)
+        {
+            InitializeComponent();
+            userService = new UserService();
+            passwordService = new PasswordService();
+            langue = _langue;
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -33,7 +41,7 @@ namespace SaglikliYER
                 DUser dUser = userService.CheckLogin(email, pass);
                 if (dUser != null)
                 {
-                    FormMain formMain = new FormMain(dUser.DUserID);
+                    FormMain formMain = new FormMain(dUser.DUserID,langue);
                     formMain.ShowDialog();
                     txtEmail.Text = "";
                     txtPassword1.Text = "";

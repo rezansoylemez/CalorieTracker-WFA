@@ -68,12 +68,12 @@ namespace SaglikliYER
                 Password activePassword = passService.GetActivePassword(userID);
                 if (txtOldPass.Text != activePassword.PasswordText)
                 {
-                    MessageBox.Show("Mevcut şifrenizi hatalı girdiniz");
+                    MessageBox.Show("Password is wrong.");
                     return;
                 }
                 if (txtNewPass1.Text != txtNewPass2.Text)
                 {
-                    MessageBox.Show("Şifre tekrarı hatalı");
+                    MessageBox.Show("Password repetition is wrong.");
                     return;
                 }
                 bool check = passService.AddPassword(new Password()
@@ -81,7 +81,7 @@ namespace SaglikliYER
                     PasswordText = txtNewPass1.Text,
                     DUserID = userID
                 });
-                MessageBox.Show(check ? "Şifre değiştirildi" : "Şifre değiştirileMedi");
+                MessageBox.Show(check ? "Complete Successfully!" : "Process Failed!");
             }
             catch (Exception ex)
             {
@@ -102,7 +102,7 @@ namespace SaglikliYER
                     Height = Convert.ToDecimal(txtHeight.Text),
                     Weight = Convert.ToDecimal(txtWeight.Text)
                 });
-                MessageBox.Show("Güncelleme Başarılı");
+                MessageBox.Show("Complete Successfully!");
             }
             catch (Exception ex)
             {
@@ -112,6 +112,11 @@ namespace SaglikliYER
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormSettings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

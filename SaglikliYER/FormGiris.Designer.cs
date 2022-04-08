@@ -45,6 +45,8 @@ namespace SaglikliYER
             this.btnKacKalori = new System.Windows.Forms.Button();
             this.btnSesAc = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnTr = new System.Windows.Forms.Button();
+            this.btnEng = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +59,7 @@ namespace SaglikliYER
             this.iletişimToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(346, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(340, 24);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -165,7 +167,7 @@ namespace SaglikliYER
             this.btnKacKalori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnKacKalori.FlatAppearance.BorderSize = 0;
             this.btnKacKalori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKacKalori.Location = new System.Drawing.Point(122, 283);
+            this.btnKacKalori.Location = new System.Drawing.Point(129, 283);
             this.btnKacKalori.Name = "btnKacKalori";
             this.btnKacKalori.Size = new System.Drawing.Size(90, 85);
             this.btnKacKalori.TabIndex = 14;
@@ -178,7 +180,7 @@ namespace SaglikliYER
             this.btnSesAc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSesAc.FlatAppearance.BorderSize = 0;
             this.btnSesAc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSesAc.Location = new System.Drawing.Point(274, 472);
+            this.btnSesAc.Location = new System.Drawing.Point(253, 472);
             this.btnSesAc.Name = "btnSesAc";
             this.btnSesAc.Size = new System.Drawing.Size(59, 44);
             this.btnSesAc.TabIndex = 17;
@@ -195,12 +197,36 @@ namespace SaglikliYER
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
+            // btnTr
+            // 
+            this.btnTr.BackColor = System.Drawing.Color.Transparent;
+            this.btnTr.Location = new System.Drawing.Point(278, 27);
+            this.btnTr.Name = "btnTr";
+            this.btnTr.Size = new System.Drawing.Size(55, 21);
+            this.btnTr.TabIndex = 20;
+            this.btnTr.Text = "Türkçe";
+            this.btnTr.UseVisualStyleBackColor = false;
+            this.btnTr.Click += new System.EventHandler(this.btnTr_Click);
+            // 
+            // btnEng
+            // 
+            this.btnEng.BackColor = System.Drawing.Color.Transparent;
+            this.btnEng.Location = new System.Drawing.Point(217, 27);
+            this.btnEng.Name = "btnEng";
+            this.btnEng.Size = new System.Drawing.Size(55, 21);
+            this.btnEng.TabIndex = 20;
+            this.btnEng.Text = "English";
+            this.btnEng.UseVisualStyleBackColor = false;
+            this.btnEng.Click += new System.EventHandler(this.btnEng_Click);
+            // 
             // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(346, 528);
+            this.ClientSize = new System.Drawing.Size(340, 517);
+            this.Controls.Add(this.btnEng);
+            this.Controls.Add(this.btnTr);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSesAc);
             this.Controls.Add(this.menuStrip1);
@@ -235,6 +261,8 @@ namespace SaglikliYER
         private System.Windows.Forms.Button btnKacKalori;
         private System.Windows.Forms.Button btnSesAc;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnTr;
+        private System.Windows.Forms.Button btnEng;
     }
 }
 

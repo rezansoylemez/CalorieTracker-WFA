@@ -390,6 +390,7 @@ namespace SaglikliYER
             this.Name = "FormUrunEkleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUrunEkleme";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormUrunEkleme_FormClosed);
             this.Load += new System.EventHandler(this.FormUrunEkleme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudProtein)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCalorie)).EndInit();

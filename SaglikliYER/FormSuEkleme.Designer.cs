@@ -52,11 +52,13 @@ namespace SaglikliYER
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button15);
             this.groupBox1.Controls.Add(this.button14);
             this.groupBox1.Controls.Add(this.button13);
@@ -80,7 +82,7 @@ namespace SaglikliYER
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(324, 253);
+            this.groupBox1.Size = new System.Drawing.Size(329, 253);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Drink Water";
@@ -283,7 +285,7 @@ namespace SaglikliYER
             // 
             // txtWater
             // 
-            this.txtWater.Location = new System.Drawing.Point(262, 31);
+            this.txtWater.Location = new System.Drawing.Point(240, 31);
             this.txtWater.Name = "txtWater";
             this.txtWater.ReadOnly = true;
             this.txtWater.Size = new System.Drawing.Size(51, 22);
@@ -292,7 +294,7 @@ namespace SaglikliYER
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 34);
+            this.label3.Location = new System.Drawing.Point(5, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(237, 16);
             this.label3.TabIndex = 14;
@@ -302,7 +304,7 @@ namespace SaglikliYER
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(272, 207);
+            this.label2.Location = new System.Drawing.Point(291, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 21);
             this.label2.TabIndex = 7;
@@ -311,7 +313,7 @@ namespace SaglikliYER
             // txtDrunkWater
             // 
             this.txtDrunkWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDrunkWater.Location = new System.Drawing.Point(206, 207);
+            this.txtDrunkWater.Location = new System.Drawing.Point(239, 207);
             this.txtDrunkWater.Name = "txtDrunkWater";
             this.txtDrunkWater.ReadOnly = true;
             this.txtDrunkWater.Size = new System.Drawing.Size(52, 24);
@@ -322,7 +324,7 @@ namespace SaglikliYER
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(24, 212);
+            this.label1.Location = new System.Drawing.Point(62, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 16);
             this.label1.TabIndex = 5;
@@ -356,17 +358,28 @@ namespace SaglikliYER
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(291, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 21);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "ml";
+            // 
             // FormSuEkleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(345, 309);
+            this.ClientSize = new System.Drawing.Size(353, 309);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
             this.Name = "FormSuEkleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSuEkleme";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormSuEkleme_FormClosed);
             this.Load += new System.EventHandler(this.FormSuEkleme_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -398,5 +411,6 @@ namespace SaglikliYER
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -20,11 +20,13 @@ namespace SaglikliYER
             InitializeComponent();
         }
         int userID;
-        public FormMain(int _userID)
+        string langue;
+        public FormMain(int _userID,string _langue)
         {
             InitializeComponent();
             userID = _userID;
             userService = new UserService();
+            langue = _langue;
         }
 
         private void btnDrinkWater_Click(object sender, EventArgs e)
@@ -87,12 +89,53 @@ namespace SaglikliYER
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            button5.Enabled = false;
-            button6.Enabled = false;
-            button7.Enabled = false;
-            button13.Enabled = false;
-            button14.Enabled = false;
-            button15.Enabled = false;
+            switch (langue)
+            {
+                case "Eng":
+                    label3.Text = "Tab to drink water !!";
+                    label2.Text = "Tab to eat food !!";
+                    label4.Text = "Tab to calculate calorie !!";
+                    label8.Text = "Tab for reports !!";
+                    label6.Text = "Tab to your challange !!";
+                    label7.Text = "Tab to your meals !!";
+                    groupBox2.Text = "What Do You Wish";
+                    groupBox3.Text = "Calculate Calorie";
+                    groupBox2.Text = "Your Reports";
+                    groupBox1.Text = "Drink Water";
+                    groupBox4.Text = "Add Food";
+                    groupBox9.Text = "Your Meal";
+                    groupBox7.Text = "Your Challenge";
+                    groupBox10.Text = "Your Reports";
+                    button5.Enabled = false;
+                    button6.Enabled = false;
+                    button7.Enabled = false;
+                    button13.Enabled = false;
+                    button14.Enabled = false;
+                    button15.Enabled = false;
+                    break;
+                case "Tr":
+                    label3.Text = "Su içmek için basınız !!";
+                    label2.Text = "Yiyecek eklemek için basınız !!";
+                    label4.Text = "Kalori hesabı yapmak için !!";
+                    label8.Text = "Raporlar için basınız !!";
+                    label6.Text = "Challangelar için basınız !!";
+                    label7.Text = "Öğünlerin için basınız !!";
+                    groupBox2.Text = "Ne Yapmak İstersin";
+                    groupBox3.Text = "Kalori Hesabı";
+                    groupBox2.Text = "Raporların";
+                    groupBox1.Text = "Su içmek";
+                    groupBox10.Text = "Raporların";
+                    groupBox9.Text = "Öğünlerin";
+                    groupBox7.Text = "Challenge";
+                    groupBox4.Text = "Yiyecek yemek";
+                    button5.Enabled = false;
+                    button6.Enabled = false;
+                    button7.Enabled = false;
+                    button13.Enabled = false;
+                    button14.Enabled = false;
+                    button15.Enabled = false;
+                    break;
+            }
         }
 
         private void btnNotif_Click(object sender, EventArgs e)
@@ -110,7 +153,6 @@ namespace SaglikliYER
             this.Hide();
             formSettings.Show();
         }
-
         private void btnOyun_Click(object sender, EventArgs e)
         {
             FormTicTacToe formTicTacToe = new FormTicTacToe();
@@ -130,7 +172,6 @@ namespace SaglikliYER
         private void timer1_Tick(object sender, EventArgs e)
         {
             DUser dUser = userService.GetUserByUserID(userID);
-
             count++;
 
             if (count != 0 && count % 300 == 0)

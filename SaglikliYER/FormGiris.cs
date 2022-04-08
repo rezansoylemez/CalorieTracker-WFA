@@ -16,13 +16,17 @@ namespace SaglikliYER
         {
             InitializeComponent();
         }
-
+        string langue;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormLogin login = new FormLogin();
-            login.Owner = this;
-            this.Hide();
-            login.Show();
+            if (String.IsNullOrEmpty(langue))
+            {
+                FormLogin login = new FormLogin(langue);
+                login.Owner = this;
+                this.Hide();
+                login.Show();
+            }
+            else MessageBox.Show("Choose Langue");
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -87,6 +91,16 @@ namespace SaglikliYER
             bilgilendirme.Owner = this;
             this.Hide();
             bilgilendirme.ShowDialog();
+        }
+
+        private void btnEng_Click(object sender, EventArgs e)
+        {
+            langue = "Eng";
+        }
+
+        private void btnTr_Click(object sender, EventArgs e)
+        {
+            langue = "Tr";
         }
     }
 }

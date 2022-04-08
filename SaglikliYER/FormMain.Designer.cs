@@ -85,12 +85,11 @@ namespace SaglikliYER
             this.groupBox6.Controls.Add(this.groupBox9);
             this.groupBox6.Controls.Add(this.groupBox10);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox6.Location = new System.Drawing.Point(403, 70);
+            this.groupBox6.Location = new System.Drawing.Point(403, 53);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(385, 332);
             this.groupBox6.TabIndex = 31;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Your Reports";
             // 
             // label6
             // 
@@ -101,29 +100,26 @@ namespace SaglikliYER
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 25);
             this.label6.TabIndex = 24;
-            this.label6.Text = "Tab to your challange !!";
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(157, 154);
+            this.label7.Location = new System.Drawing.Point(157, 150);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(191, 26);
             this.label7.TabIndex = 25;
-            this.label7.Text = "Tab to your meals !!";
             // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(168, 53);
+            this.label8.Location = new System.Drawing.Point(168, 47);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(180, 24);
             this.label8.TabIndex = 26;
-            this.label8.Text = "Tab for reports !!";
             // 
             // button13
             // 
@@ -143,7 +139,7 @@ namespace SaglikliYER
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(139, 116);
+            this.button14.Location = new System.Drawing.Point(139, 120);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(237, 97);
             this.button14.TabIndex = 21;
@@ -155,7 +151,7 @@ namespace SaglikliYER
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(137, 15);
+            this.button15.Location = new System.Drawing.Point(139, 19);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(237, 97);
             this.button15.TabIndex = 22;
@@ -170,7 +166,6 @@ namespace SaglikliYER
             this.groupBox7.Size = new System.Drawing.Size(112, 102);
             this.groupBox7.TabIndex = 16;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Challange";
             // 
             // btnChallange
             // 
@@ -194,7 +189,6 @@ namespace SaglikliYER
             this.groupBox9.Size = new System.Drawing.Size(112, 94);
             this.groupBox9.TabIndex = 16;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Your Meal";
             // 
             // btnMeal
             // 
@@ -219,7 +213,6 @@ namespace SaglikliYER
             this.groupBox10.Size = new System.Drawing.Size(112, 97);
             this.groupBox10.TabIndex = 16;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Reports";
             // 
             // btnReports
             // 
@@ -243,7 +236,6 @@ namespace SaglikliYER
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(191, 30);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Tab to calculate calorie !!";
             // 
             // label2
             // 
@@ -254,7 +246,6 @@ namespace SaglikliYER
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 27);
             this.label2.TabIndex = 27;
-            this.label2.Text = "Tab to eat food !!";
             // 
             // label3
             // 
@@ -265,7 +256,6 @@ namespace SaglikliYER
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(191, 26);
             this.label3.TabIndex = 29;
-            this.label3.Text = "Tab to drink water !!";
             // 
             // btnBack
             // 
@@ -339,7 +329,6 @@ namespace SaglikliYER
             this.groupBox3.Size = new System.Drawing.Size(112, 95);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Calculator";
             // 
             // btnAddFood
             // 
@@ -363,7 +352,6 @@ namespace SaglikliYER
             this.groupBox4.Size = new System.Drawing.Size(112, 102);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Add Food";
             // 
             // groupBox2
             // 
@@ -376,12 +364,11 @@ namespace SaglikliYER
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 70);
+            this.groupBox2.Location = new System.Drawing.Point(12, 53);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(385, 332);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "What Do You Wish?";
             // 
             // groupBox1
             // 
@@ -392,7 +379,6 @@ namespace SaglikliYER
             this.groupBox1.Size = new System.Drawing.Size(112, 97);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Drink Water";
             // 
             // btnDrinkWater
             // 
@@ -414,7 +400,7 @@ namespace SaglikliYER
             this.btnNotif.FlatAppearance.BorderSize = 0;
             this.btnNotif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnNotif.Location = new System.Drawing.Point(694, 12);
+            this.btnNotif.Location = new System.Drawing.Point(694, 10);
             this.btnNotif.Name = "btnNotif";
             this.btnNotif.Size = new System.Drawing.Size(44, 33);
             this.btnNotif.TabIndex = 30;
@@ -428,7 +414,7 @@ namespace SaglikliYER
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(744, 12);
+            this.button2.Location = new System.Drawing.Point(744, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(44, 33);
             this.button2.TabIndex = 30;
@@ -442,7 +428,7 @@ namespace SaglikliYER
             this.btnOyun.FlatAppearance.BorderSize = 0;
             this.btnOyun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOyun.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOyun.Location = new System.Drawing.Point(557, 6);
+            this.btnOyun.Location = new System.Drawing.Point(580, 1);
             this.btnOyun.Name = "btnOyun";
             this.btnOyun.Size = new System.Drawing.Size(53, 43);
             this.btnOyun.TabIndex = 30;
@@ -455,7 +441,7 @@ namespace SaglikliYER
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(616, 3);
+            this.button1.Location = new System.Drawing.Point(631, -5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 62);
             this.button1.TabIndex = 32;
@@ -471,7 +457,7 @@ namespace SaglikliYER
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(800, 414);
+            this.ClientSize = new System.Drawing.Size(800, 388);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label3);

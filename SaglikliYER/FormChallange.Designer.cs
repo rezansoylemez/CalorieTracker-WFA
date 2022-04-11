@@ -62,7 +62,7 @@ namespace SaglikliYER
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(525, 436);
+            this.btnBack.Location = new System.Drawing.Point(748, 399);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(119, 37);
             this.btnBack.TabIndex = 27;
@@ -73,9 +73,9 @@ namespace SaglikliYER
             // 
             this.groupBox6.Controls.Add(this.btnCongratulations);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox6.Location = new System.Drawing.Point(116, 366);
+            this.groupBox6.Location = new System.Drawing.Point(494, 139);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(110, 95);
+            this.groupBox6.Size = new System.Drawing.Size(80, 80);
             this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Congratulations";
@@ -86,9 +86,9 @@ namespace SaglikliYER
             this.btnCongratulations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCongratulations.FlatAppearance.BorderSize = 0;
             this.btnCongratulations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCongratulations.Location = new System.Drawing.Point(18, 21);
+            this.btnCongratulations.Location = new System.Drawing.Point(9, 16);
             this.btnCongratulations.Name = "btnCongratulations";
-            this.btnCongratulations.Size = new System.Drawing.Size(76, 63);
+            this.btnCongratulations.Size = new System.Drawing.Size(65, 58);
             this.btnCongratulations.TabIndex = 13;
             this.btnCongratulations.UseVisualStyleBackColor = true;
             this.btnCongratulations.Click += new System.EventHandler(this.btnCongratulations_Click);
@@ -99,7 +99,7 @@ namespace SaglikliYER
             this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(18, 21);
+            this.btnRefresh.Location = new System.Drawing.Point(3, 19);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(76, 63);
             this.btnRefresh.TabIndex = 13;
@@ -110,9 +110,9 @@ namespace SaglikliYER
             // 
             this.groupBox4.Controls.Add(this.btnRefresh);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox4.Location = new System.Drawing.Point(375, 366);
+            this.groupBox4.Location = new System.Drawing.Point(403, 134);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(110, 95);
+            this.groupBox4.Size = new System.Drawing.Size(85, 86);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Refresh";
@@ -153,7 +153,7 @@ namespace SaglikliYER
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(6, 21);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(479, 339);
+            this.listView2.Size = new System.Drawing.Size(381, 206);
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -164,9 +164,9 @@ namespace SaglikliYER
             this.btnChallange.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChallange.FlatAppearance.BorderSize = 0;
             this.btnChallange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChallange.Location = new System.Drawing.Point(19, 19);
+            this.btnChallange.Location = new System.Drawing.Point(6, 16);
             this.btnChallange.Name = "btnChallange";
-            this.btnChallange.Size = new System.Drawing.Size(76, 63);
+            this.btnChallange.Size = new System.Drawing.Size(71, 57);
             this.btnChallange.TabIndex = 13;
             this.btnChallange.UseVisualStyleBackColor = true;
             this.btnChallange.Click += new System.EventHandler(this.btnChallange_Click);
@@ -175,23 +175,20 @@ namespace SaglikliYER
             // 
             this.groupBox5.Controls.Add(this.btnChallange);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox5.Location = new System.Drawing.Point(0, 366);
+            this.groupBox5.Location = new System.Drawing.Point(494, 55);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(110, 95);
+            this.groupBox5.Size = new System.Drawing.Size(80, 73);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Challenge";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.listView2);
-            this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Controls.Add(this.groupBox6);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 12);
+            this.groupBox3.Location = new System.Drawing.Point(4, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(497, 467);
+            this.groupBox3.Size = new System.Drawing.Size(393, 236);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "All User Details";
@@ -202,9 +199,9 @@ namespace SaglikliYER
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(18, 21);
+            this.btnSearch.Location = new System.Drawing.Point(12, 15);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(76, 63);
+            this.btnSearch.Size = new System.Drawing.Size(64, 57);
             this.btnSearch.TabIndex = 13;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -213,27 +210,27 @@ namespace SaglikliYER
             // 
             this.groupBox2.Controls.Add(this.btnSearch);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(515, 72);
+            this.groupBox2.Location = new System.Drawing.Point(403, 50);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(110, 95);
+            this.groupBox2.Size = new System.Drawing.Size(85, 78);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search";
             // 
             // txtSearcUser
             // 
-            this.txtSearcUser.Location = new System.Drawing.Point(6, 21);
+            this.txtSearcUser.Location = new System.Drawing.Point(6, 15);
             this.txtSearcUser.Name = "txtSearcUser";
-            this.txtSearcUser.Size = new System.Drawing.Size(123, 22);
+            this.txtSearcUser.Size = new System.Drawing.Size(158, 22);
             this.txtSearcUser.TabIndex = 0;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtSearcUser);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(515, 12);
+            this.groupBox1.Location = new System.Drawing.Point(401, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(135, 54);
+            this.groupBox1.Size = new System.Drawing.Size(179, 43);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search User";
@@ -243,8 +240,11 @@ namespace SaglikliYER
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(664, 489);
+            this.ClientSize = new System.Drawing.Size(582, 231);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

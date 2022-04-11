@@ -59,7 +59,7 @@ namespace SaglikliYER
             this.iletişimToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(340, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(576, 24);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -139,7 +139,7 @@ namespace SaglikliYER
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(175, 391);
+            this.btnLogin.Location = new System.Drawing.Point(328, 165);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(137, 96);
             this.btnLogin.TabIndex = 12;
@@ -153,7 +153,7 @@ namespace SaglikliYER
             this.btnSignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Location = new System.Drawing.Point(21, 399);
+            this.btnSignUp.Location = new System.Drawing.Point(134, 173);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(118, 80);
             this.btnSignUp.TabIndex = 13;
@@ -167,7 +167,7 @@ namespace SaglikliYER
             this.btnKacKalori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnKacKalori.FlatAppearance.BorderSize = 0;
             this.btnKacKalori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKacKalori.Location = new System.Drawing.Point(129, 283);
+            this.btnKacKalori.Location = new System.Drawing.Point(12, 66);
             this.btnKacKalori.Name = "btnKacKalori";
             this.btnKacKalori.Size = new System.Drawing.Size(90, 85);
             this.btnKacKalori.TabIndex = 14;
@@ -180,7 +180,7 @@ namespace SaglikliYER
             this.btnSesAc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSesAc.FlatAppearance.BorderSize = 0;
             this.btnSesAc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSesAc.Location = new System.Drawing.Point(253, 472);
+            this.btnSesAc.Location = new System.Drawing.Point(493, 133);
             this.btnSesAc.Name = "btnSesAc";
             this.btnSesAc.Size = new System.Drawing.Size(59, 44);
             this.btnSesAc.TabIndex = 17;
@@ -190,7 +190,7 @@ namespace SaglikliYER
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 98);
+            this.pictureBox1.Location = new System.Drawing.Point(134, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 144);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,7 +200,7 @@ namespace SaglikliYER
             // btnTr
             // 
             this.btnTr.BackColor = System.Drawing.Color.Transparent;
-            this.btnTr.Location = new System.Drawing.Point(278, 27);
+            this.btnTr.Location = new System.Drawing.Point(493, 66);
             this.btnTr.Name = "btnTr";
             this.btnTr.Size = new System.Drawing.Size(55, 21);
             this.btnTr.TabIndex = 20;
@@ -211,7 +211,7 @@ namespace SaglikliYER
             // btnEng
             // 
             this.btnEng.BackColor = System.Drawing.Color.Transparent;
-            this.btnEng.Location = new System.Drawing.Point(217, 27);
+            this.btnEng.Location = new System.Drawing.Point(493, 39);
             this.btnEng.Name = "btnEng";
             this.btnEng.Size = new System.Drawing.Size(55, 21);
             this.btnEng.TabIndex = 20;
@@ -224,7 +224,7 @@ namespace SaglikliYER
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(340, 517);
+            this.ClientSize = new System.Drawing.Size(576, 239);
             this.Controls.Add(this.btnEng);
             this.Controls.Add(this.btnTr);
             this.Controls.Add(this.pictureBox1);

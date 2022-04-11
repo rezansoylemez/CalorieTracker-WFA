@@ -72,10 +72,10 @@ namespace SaglikliYER
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.txtOldPass);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(15, 239);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(369, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(381, 141);
+            this.groupBox1.Size = new System.Drawing.Size(209, 221);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Your Profile";
@@ -86,34 +86,34 @@ namespace SaglikliYER
             this.btnUpdatePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdatePass.FlatAppearance.BorderSize = 0;
             this.btnUpdatePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdatePass.Location = new System.Drawing.Point(302, 75);
+            this.btnUpdatePass.Location = new System.Drawing.Point(136, 167);
             this.btnUpdatePass.Name = "btnUpdatePass";
-            this.btnUpdatePass.Size = new System.Drawing.Size(60, 50);
+            this.btnUpdatePass.Size = new System.Drawing.Size(47, 37);
             this.btnUpdatePass.TabIndex = 17;
             this.btnUpdatePass.UseVisualStyleBackColor = true;
             this.btnUpdatePass.Click += new System.EventHandler(this.btnUpdatePass_Click);
             // 
             // txtNewPass2
             // 
-            this.txtNewPass2.Location = new System.Drawing.Point(107, 105);
+            this.txtNewPass2.Location = new System.Drawing.Point(83, 120);
             this.txtNewPass2.Name = "txtNewPass2";
-            this.txtNewPass2.Size = new System.Drawing.Size(100, 20);
+            this.txtNewPass2.Size = new System.Drawing.Size(120, 20);
             this.txtNewPass2.TabIndex = 0;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(11, 112);
+            this.label13.Location = new System.Drawing.Point(11, 123);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 13);
+            this.label13.Size = new System.Drawing.Size(66, 13);
             this.label13.TabIndex = 0;
             this.label13.Text = "Pass Again :";
             // 
             // txtNewPass1
             // 
-            this.txtNewPass1.Location = new System.Drawing.Point(107, 65);
+            this.txtNewPass1.Location = new System.Drawing.Point(83, 73);
             this.txtNewPass1.Name = "txtNewPass1";
-            this.txtNewPass1.Size = new System.Drawing.Size(100, 20);
+            this.txtNewPass1.Size = new System.Drawing.Size(120, 20);
             this.txtNewPass1.TabIndex = 0;
             // 
             // label15
@@ -121,24 +121,24 @@ namespace SaglikliYER
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(9, 33);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(75, 13);
+            this.label15.Size = new System.Drawing.Size(64, 13);
             this.label15.TabIndex = 0;
             this.label15.Text = "Used Pass :";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 72);
+            this.label12.Location = new System.Drawing.Point(9, 76);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 13);
+            this.label12.Size = new System.Drawing.Size(60, 13);
             this.label12.TabIndex = 0;
             this.label12.Text = "New pass :";
             // 
             // txtOldPass
             // 
-            this.txtOldPass.Location = new System.Drawing.Point(107, 26);
+            this.txtOldPass.Location = new System.Drawing.Point(83, 30);
             this.txtOldPass.Name = "txtOldPass";
-            this.txtOldPass.Size = new System.Drawing.Size(100, 20);
+            this.txtOldPass.Size = new System.Drawing.Size(120, 20);
             this.txtOldPass.TabIndex = 0;
             // 
             // label11
@@ -154,14 +154,14 @@ namespace SaglikliYER
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(8, 30);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 13);
+            this.label14.Size = new System.Drawing.Size(42, 13);
             this.label14.TabIndex = 0;
             this.label14.Text = "E-Mail :";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(148, 163);
@@ -193,10 +193,10 @@ namespace SaglikliYER
             this.groupBox3.Controls.Add(this.txtSurname);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.txtName);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(166, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(227, 221);
+            this.groupBox3.Size = new System.Drawing.Size(197, 221);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Your Profile";
@@ -207,7 +207,7 @@ namespace SaglikliYER
             this.btnUpdateUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdateUser.FlatAppearance.BorderSize = 0;
             this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateUser.Location = new System.Drawing.Point(179, 180);
+            this.btnUpdateUser.Location = new System.Drawing.Point(123, 176);
             this.btnUpdateUser.Name = "btnUpdateUser";
             this.btnUpdateUser.Size = new System.Drawing.Size(42, 35);
             this.btnUpdateUser.TabIndex = 17;
@@ -216,25 +216,25 @@ namespace SaglikliYER
             // 
             // txtWeight
             // 
-            this.txtWeight.Location = new System.Drawing.Point(82, 150);
+            this.txtWeight.Location = new System.Drawing.Point(81, 150);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(100, 20);
+            this.txtWeight.Size = new System.Drawing.Size(110, 20);
             this.txtWeight.TabIndex = 0;
             // 
             // labelMail
             // 
             this.labelMail.AutoSize = true;
-            this.labelMail.Location = new System.Drawing.Point(79, 30);
+            this.labelMail.Location = new System.Drawing.Point(78, 30);
             this.labelMail.Name = "labelMail";
-            this.labelMail.Size = new System.Drawing.Size(50, 13);
+            this.labelMail.Size = new System.Drawing.Size(42, 13);
             this.labelMail.TabIndex = 0;
             this.labelMail.Text = "E-Mail :";
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(82, 124);
+            this.txtHeight.Location = new System.Drawing.Point(81, 124);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(100, 20);
+            this.txtHeight.Size = new System.Drawing.Size(110, 20);
             this.txtHeight.TabIndex = 0;
             // 
             // label9
@@ -242,7 +242,7 @@ namespace SaglikliYER
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(8, 131);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 0;
             this.label9.Text = "Height :";
             // 
@@ -251,16 +251,16 @@ namespace SaglikliYER
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(8, 157);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Weight";
             // 
             // labelAge
             // 
             this.labelAge.AutoSize = true;
-            this.labelAge.Location = new System.Drawing.Point(79, 105);
+            this.labelAge.Location = new System.Drawing.Point(78, 105);
             this.labelAge.Name = "labelAge";
-            this.labelAge.Size = new System.Drawing.Size(37, 13);
+            this.labelAge.Size = new System.Drawing.Size(32, 13);
             this.labelAge.TabIndex = 0;
             this.labelAge.Text = "Age :";
             // 
@@ -269,7 +269,7 @@ namespace SaglikliYER
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(8, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Age :";
             // 
@@ -278,15 +278,15 @@ namespace SaglikliYER
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "SurName :";
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(82, 72);
+            this.txtSurname.Location = new System.Drawing.Point(81, 72);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(100, 20);
+            this.txtSurname.Size = new System.Drawing.Size(110, 20);
             this.txtSurname.TabIndex = 0;
             // 
             // label1
@@ -294,15 +294,15 @@ namespace SaglikliYER
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name :";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(82, 46);
+            this.txtName.Location = new System.Drawing.Point(81, 46);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.Size = new System.Drawing.Size(110, 20);
             this.txtName.TabIndex = 0;
             // 
             // btnBack
@@ -311,8 +311,8 @@ namespace SaglikliYER
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(15, 386);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBack.Location = new System.Drawing.Point(12, 194);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(114, 29);
             this.btnBack.TabIndex = 31;
@@ -324,7 +324,7 @@ namespace SaglikliYER
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(408, 421);
+            this.ClientSize = new System.Drawing.Size(590, 244);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

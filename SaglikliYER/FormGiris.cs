@@ -19,27 +19,31 @@ namespace SaglikliYER
         string langue;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(langue))
+            if (String.IsNullOrEmpty(langue)) MessageBox.Show("Choose Langue");
+            else
             {
                 FormLogin login = new FormLogin(langue);
                 login.Owner = this;
                 this.Hide();
                 login.Show();
             }
-            else MessageBox.Show("Choose Langue");
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            FormSignUp signUp = new FormSignUp();
-            signUp.Owner = this;
-            this.Hide();
-            signUp.Show();
+            if (String.IsNullOrEmpty(langue)) MessageBox.Show("Choose Langue");
+            else
+            {
+                FormSignUp signUp = new FormSignUp(langue);
+                signUp.Owner = this;
+                this.Hide();
+                signUp.Show();
+            }
         }
 
         private void btnKacKalori_Click(object sender, EventArgs e)
         {
-            FormKalHesaplama kalHesaplama = new FormKalHesaplama();
+            FormKalHesaplama kalHesaplama = new FormKalHesaplama(langue);
             kalHesaplama.Owner = this;
             this.Hide();
             kalHesaplama.Show();
@@ -97,7 +101,6 @@ namespace SaglikliYER
         {
             langue = "Eng";
         }
-
         private void btnTr_Click(object sender, EventArgs e)
         {
             langue = "Tr";

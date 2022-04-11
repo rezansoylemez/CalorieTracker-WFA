@@ -22,28 +22,52 @@ namespace SaglikliYER
             InitializeComponent();
         }
         int userID;
-        public FormSettings(int _userID)
+        string langue;
+        public FormSettings(int _userID,string _langue)
         {
             InitializeComponent();
             userService = new UserService();
             passService = new PasswordService();
             userDatailsServece = new UserDatailsServece();
             userID = _userID;
+            langue = _langue;
         }
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            
-            Password password = new Password();
-        }
-
         private void FormSettings_Load(object sender, EventArgs e)
         {
-
+            switch (langue)
+            {
+                case "Eng":
+                    label4.Text = "E-mail :";
+                    label1.Text = "Name :";
+                    label2.Text = "Surname : :";
+                    label3.Text = "Age :";
+                    label9.Text = "Height :";
+                    label4.Text = "Weight :";
+                    label15.Text = "Used Pass :";
+                    label2.Text = "Neww Pass :";
+                    label3.Text = "Pass Again :";
+                    groupBox1.Text = "Your Password";
+                    groupBox3.Text = "Your Profile";
+                    groupBox2.Text = "Profile Picture";
+                    break;
+                case "Tr":
+                    label4.Text = "E-posta :";
+                    label1.Text = "Ad :";
+                    label2.Text = "Soyad : :";
+                    label3.Text = "Yaş :";
+                    label9.Text = "Boy :";
+                    label4.Text = "Kilo :";
+                    label15.Text = "Kullanılan Şifre :";
+                    label12.Text = "Yeni Şifre :";
+                    label13.Text = "Şifre Tekrar :";
+                    groupBox1.Text = "Şifrelerin";
+                    groupBox3.Text = "Profilin";
+                    groupBox2.Text = "Profil Fotoğrafın";
+                    break;
+            }
             UserDetail userDetail1 = userDatailsServece.GetUserDetailByID(userID);
-
             if (userDetail1.Gender == false) pictureBox1.Image = Image.FromFile(@"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\Man.png");
             else if (userDetail1.Gender == true) pictureBox1.Image = Image.FromFile(@"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\Woman.png");
-
             try
             {
                 UserDetail userDetail = userDatailsServece.GetUserDetailByID(userID);
@@ -68,12 +92,14 @@ namespace SaglikliYER
                 Password activePassword = passService.GetActivePassword(userID);
                 if (txtOldPass.Text != activePassword.PasswordText)
                 {
-                    MessageBox.Show("Password is wrong.");
+                    if(langue=="Eng") MessageBox.Show("Password is wrong.");
+                    else if(langue=="Tr")MessageBox.Show("Şifre yanlış");
                     return;
                 }
                 if (txtNewPass1.Text != txtNewPass2.Text)
                 {
-                    MessageBox.Show("Password repetition is wrong.");
+                    if (langue == "Eng") MessageBox.Show("Password repetition is wrong.");
+                    else if (langue == "Tr") MessageBox.Show("Yanlış Şifre");
                     return;
                 }
                 bool check = passService.AddPassword(new Password()
@@ -81,7 +107,8 @@ namespace SaglikliYER
                     PasswordText = txtNewPass1.Text,
                     DUserID = userID
                 });
-                MessageBox.Show(check ? "Complete Successfully!" : "Process Failed!");
+                if (langue == "Eng") MessageBox.Show(check ? "Complete Successfully!" : "Process Failed!");
+                else if (langue == "Tr") MessageBox.Show(check ? "Tamamlandı !" : "Tamamlanmadı !");
             }
             catch (Exception ex)
             {
@@ -93,7 +120,6 @@ namespace SaglikliYER
         {
             try
             {
-                
                 userDatailsServece.CUpdateUserDetails(new UserDetail()
                 {
                     UserDetailID = userID,
@@ -102,7 +128,8 @@ namespace SaglikliYER
                     Height = Convert.ToDecimal(txtHeight.Text),
                     Weight = Convert.ToDecimal(txtWeight.Text)
                 });
-                MessageBox.Show("Complete Successfully!");
+                if (langue == "Eng") MessageBox.Show("Complete Successfully!");
+                else if (langue == "Tr") MessageBox.Show("İşlem Tamamlanmadı");
             }
             catch (Exception ex)
             {
@@ -113,7 +140,6 @@ namespace SaglikliYER
         {
             this.Close();
         }
-
         private void FormSettings_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Owner.Show();

@@ -25,6 +25,15 @@ namespace SaglikliYER
             userDatailsServece = new UserDatailsServece();
             passwordService = new PasswordService();
         }
+        string langue;
+        public FormSignUp(string _langue)
+        {
+            InitializeComponent();
+            userService = new UserService();
+            userDatailsServece = new UserDatailsServece();
+            passwordService = new PasswordService();
+            langue = _langue;
+        }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -41,7 +50,8 @@ namespace SaglikliYER
                     {
                         if (!txtEmail.Text.Contains("@") || !txtEmail.Text.EndsWith(".com"))
                         {
-                            MessageBox.Show("Please type a correct email.");
+                            if (langue == "Eng") MessageBox.Show("Please type a correct email.");
+                            else if (langue == "Tr") MessageBox.Show("Lütfen doğru bir e - posta yazın.");
                             return;
                         }
                         passwordService.CheckPasswordText(txtPassword1.Text);
@@ -56,7 +66,9 @@ namespace SaglikliYER
                             dUser.Wish = "To Be Fit";
                         else
                         {
-                            MessageBox.Show("Choose Your Goals");
+
+                            if (langue == "Eng") MessageBox.Show("Choose Your Goals");
+                            else if (langue == "Tr") MessageBox.Show("Hedeflerinizi Seçin");
                             return;
                         }
                         userService.AddUser(dUser);
@@ -76,9 +88,8 @@ namespace SaglikliYER
                         else if (radioWoman.Checked) userDetail.Gender = true;
                         userDetail.UserDetailID = dUser.DUserID;
                         userDatailsServece.CAddUserDetail(userDetail);
-                        MessageBox.Show("Kayıt Başarılı");
+                        MessageBox.Show("Completed");
                     }
-                    
                     txtEmail.Text = "";
                     txtPassword1.Text = "";
                     txtPassword2.Text = "";
@@ -87,7 +98,8 @@ namespace SaglikliYER
                     numBoy.Value = 0;
                     numKilo.Value = 0;
                 }
-                else MessageBox.Show("Şifreler uyuşmuyor.");             
+                if (langue == "Eng") MessageBox.Show("Passwords do not match.");
+                else if(langue == "Tr") MessageBox.Show("Şifreler uyuşmuyor."); 
             }
             catch (Exception ex)
             {
@@ -102,7 +114,7 @@ namespace SaglikliYER
             int UzunlukAl = _pass.Length;
             if (UzunlukAl < 6)
             {
-                return "Zayıf Şifre..";
+                return "Weak..";
             }
             else
             {
@@ -121,37 +133,74 @@ namespace SaglikliYER
 
                 if (rakamMi == true && buyukMu == true && kucukMu == true)
                 {
-                    return "Güçlü Şifre..";
+                    return "Strong..";
                 }
                 else if (rakamMi == true && buyukMu == true && kucukMu == false)
                 {
-                    return "Orta Şifre..";
+                    return "Normal..";
                 }
                 else if (rakamMi == false && buyukMu == false && kucukMu == false)
                 {
-                    return "Zayıf Şifre..";
+                    return "Weak..";
                 }
                 else
                 {
-                    return "Orta Şifre..";
+                    return "Normal..";
                 }
             }
         }
         private void btnQuestions_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("En az 6 karakter." +
+            if(langue=="Eng")
+               MessageBox.Show("At least 6 characters" +
+                    "Use at least one Number, one Uppercase and Lowercase!");
+            else if (langue=="Tr")
+                MessageBox.Show("En az 6 karakter." +
                     "En az bir Rakam, bir Büyük Harf ve Küçük Harf Kullanın !");
         }
         private void txtPassword1_TextChanged(object sender, EventArgs e)
         {
             lblDerece.Text = PassLevel(txtPassword1.Text);
 
-            if (PassLevel(txtPassword1.Text) == "Zayıf Şifre..")
-                lblDerece.ForeColor = Color.Red;
-            else if (PassLevel(txtPassword1.Text) == "Orta Şifre..")
-                lblDerece.ForeColor = Color.Orange;
-            else if (PassLevel(txtPassword1.Text) == "Güçlü Şifre..")
-                lblDerece.ForeColor = Color.Green;
+            if (PassLevel(txtPassword1.Text) == "Weak..")
+            {
+                if (langue == "Eng")
+                {
+                    lblDerece1.ForeColor = Color.Red;
+                    lblDerece1.Text = "Weak..";
+                }
+                else if (langue == "Tr")
+                {
+                    lblDerece1.ForeColor = Color.Red;
+                    lblDerece1.Text = "Kolay..";
+                }
+            }
+            else if (PassLevel(txtPassword1.Text) == "Normal..")
+            {
+                if (langue == "Eng")
+                {
+                    lblDerece1.ForeColor = Color.Orange;
+                    lblDerece1.Text = "Normal..";
+                }
+                else if (langue == "Tr")
+                {
+                    lblDerece1.ForeColor = Color.Orange;
+                    lblDerece1.Text = "Normal..";
+                }
+            }
+            else if (PassLevel(txtPassword1.Text) == "Strong..")
+            {
+                if (langue == "Eng")
+                {
+                    lblDerece1.ForeColor = Color.Green;
+                    lblDerece1.Text = "Strong..";
+                }
+                else if (langue == "Tr")
+                {
+                    lblDerece1.ForeColor = Color.Green;
+                    lblDerece1.Text = "Zor..";
+                }
+            }
         }
         
         private void btnShowPass_Click(object sender, EventArgs e)
@@ -168,6 +217,60 @@ namespace SaglikliYER
                 txtPassword2.PasswordChar = '*';
                 count = true;
             }
+        }
+
+        private void FormSignUp_Load(object sender, EventArgs e)
+        {
+            switch (langue)
+            {
+                case "Eng":
+                    label1.Text = "E-mail :";
+                    label2.Text = "Password :";
+                    label8.Text = "Password :";
+                    label9.Text = "Password Level:";
+                    label3.Text = "Name :";
+                    label4.Text = "Surname :";
+                    label5.Text = "Height :";
+                    label6.Text = "Weight :";
+                    label7.Text = "Birth Date :";
+                    radioToBeFit.Text = "To Be Fit";
+                    radioKeep.Text = "Keep Fit";
+                    radioGain.Text = "Gain Weight";
+                    radioWoman.Text = "Woman";
+                    radioMan.Text = "Man";
+                    groupBox2.Text = "Register";
+                    groupBox3.Text = "User Details";
+                    groupBox1.Text = "Gender";
+                    groupBox4.Text = "Your Goals";
+                    this.Text = "Sign Up";
+                    break;
+                case "Tr":
+                    label1.Text = "E-posta :";
+                    label2.Text = "Şifre :";
+                    label8.Text = "Şifre :";
+                    label9.Text = "Şifre Seviyesi:";
+                    label3.Text = "Ad :";
+                    label4.Text = "Soyad :";
+                    label5.Text = "Boy :";
+                    label6.Text = "Kilo :";
+                    label7.Text = "Doğum Tarihi :";
+                    radioToBeFit.Text = "Fit Olmak";
+                    radioKeep.Text = "Fit Kalmak";
+                    radioGain.Text = "Kütle Kazanmak";
+                    radioWoman.Text = "Kadın";
+                    radioMan.Text = "Erkek";
+                    groupBox2.Text = "Kayıt Ol";
+                    groupBox3.Text = "Kullanıcı Detayı";
+                    groupBox1.Text = "Cinsiyet";
+                    groupBox4.Text = "Hedefin";
+                    this.Text = "Kayıt Ol";
+                    break;
+            }
+        }
+
+        private void FormSignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

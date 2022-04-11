@@ -109,5 +109,10 @@ namespace SaglikliYER
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void FormReports_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }

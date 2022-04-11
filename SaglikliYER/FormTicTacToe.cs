@@ -123,10 +123,20 @@ namespace SaglikliYER
         }
         string a = "";
         char[] char1;
-
+        string wichTurn;
+        bool turnNow=true;//true X,false O
+        bool whosTurn=true;
         private void FormTicTacToe_Load(object sender, EventArgs e)
         {
             GetTurn();
+            TicTac ticTac = userInfoService.GetTicTac(1);
+            wichTurn = ticTac.YourTurn;
+            if (wichTurn == "XX1" && wichTurn == "XX2" && wichTurn == "XX3" && wichTurn == "XY1" && wichTurn == "XY2" && wichTurn == "XY3" && wichTurn == "XZ1" && wichTurn == "XZ2" && wichTurn == "XZ3")
+            {
+                turnNow = true;
+            }
+            else turnNow = false;
+            
         }
 
         private void btnX1_Click(object sender, EventArgs e)

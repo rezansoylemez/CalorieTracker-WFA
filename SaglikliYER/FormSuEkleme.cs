@@ -207,7 +207,6 @@ namespace SaglikliYER
             txtDrunkWater.Text = (Convert.ToInt32(txtDrunkWater.Text) + 300).ToString();
             button15.Visible = false;           
         }
-
         private void FormSuEkleme_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Owner.Show();

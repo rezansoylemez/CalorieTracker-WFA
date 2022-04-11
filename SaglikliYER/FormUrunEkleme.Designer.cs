@@ -78,7 +78,7 @@ namespace SaglikliYER
             this.btnFoodSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFoodSave.FlatAppearance.BorderSize = 0;
             this.btnFoodSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFoodSave.Location = new System.Drawing.Point(223, 150);
+            this.btnFoodSave.Location = new System.Drawing.Point(180, 127);
             this.btnFoodSave.Name = "btnFoodSave";
             this.btnFoodSave.Size = new System.Drawing.Size(36, 35);
             this.btnFoodSave.TabIndex = 10;
@@ -88,9 +88,9 @@ namespace SaglikliYER
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 157);
+            this.label5.Location = new System.Drawing.Point(15, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 16);
+            this.label5.Size = new System.Drawing.Size(73, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Food Picture :";
             // 
@@ -100,7 +100,7 @@ namespace SaglikliYER
             this.btnFolderPath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFolderPath.FlatAppearance.BorderSize = 0;
             this.btnFolderPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFolderPath.Location = new System.Drawing.Point(162, 150);
+            this.btnFolderPath.Location = new System.Drawing.Point(107, 120);
             this.btnFolderPath.Name = "btnFolderPath";
             this.btnFolderPath.Size = new System.Drawing.Size(38, 35);
             this.btnFolderPath.TabIndex = 8;
@@ -109,68 +109,68 @@ namespace SaglikliYER
             // 
             // nudProtein
             // 
-            this.nudProtein.Location = new System.Drawing.Point(136, 124);
+            this.nudProtein.Location = new System.Drawing.Point(89, 101);
             this.nudProtein.Maximum = new decimal(new int[] {
             300,
             0,
             0,
             0});
             this.nudProtein.Name = "nudProtein";
-            this.nudProtein.Size = new System.Drawing.Size(146, 22);
+            this.nudProtein.Size = new System.Drawing.Size(146, 20);
             this.nudProtein.TabIndex = 7;
             // 
             // nudCalorie
             // 
-            this.nudCalorie.Location = new System.Drawing.Point(136, 93);
+            this.nudCalorie.Location = new System.Drawing.Point(89, 75);
             this.nudCalorie.Maximum = new decimal(new int[] {
             2000,
             0,
             0,
             0});
             this.nudCalorie.Name = "nudCalorie";
-            this.nudCalorie.Size = new System.Drawing.Size(146, 22);
+            this.nudCalorie.Size = new System.Drawing.Size(146, 20);
             this.nudCalorie.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 126);
+            this.label4.Location = new System.Drawing.Point(37, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 16);
+            this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Protein :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 95);
+            this.label3.Location = new System.Drawing.Point(38, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 16);
+            this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Calorie :";
             // 
             // txtFoodName
             // 
-            this.txtFoodName.Location = new System.Drawing.Point(136, 64);
+            this.txtFoodName.Location = new System.Drawing.Point(89, 49);
             this.txtFoodName.Name = "txtFoodName";
-            this.txtFoodName.Size = new System.Drawing.Size(146, 22);
+            this.txtFoodName.Size = new System.Drawing.Size(146, 20);
             this.txtFoodName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 67);
+            this.label2.Location = new System.Drawing.Point(15, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Food Name :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 37);
+            this.label1.Location = new System.Drawing.Point(-3, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 16);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Category Name :";
             // 
@@ -189,7 +189,7 @@ namespace SaglikliYER
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(6, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(301, 202);
+            this.groupBox1.Size = new System.Drawing.Size(246, 167);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Food/per100gr";
@@ -197,9 +197,9 @@ namespace SaglikliYER
             // cmbCategoryName
             // 
             this.cmbCategoryName.FormattingEnabled = true;
-            this.cmbCategoryName.Location = new System.Drawing.Point(136, 37);
+            this.cmbCategoryName.Location = new System.Drawing.Point(89, 22);
             this.cmbCategoryName.Name = "cmbCategoryName";
-            this.cmbCategoryName.Size = new System.Drawing.Size(146, 24);
+            this.cmbCategoryName.Size = new System.Drawing.Size(146, 21);
             this.cmbCategoryName.TabIndex = 4;
             // 
             // btnSaveCategory
@@ -208,7 +208,7 @@ namespace SaglikliYER
             this.btnSaveCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSaveCategory.FlatAppearance.BorderSize = 0;
             this.btnSaveCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveCategory.Location = new System.Drawing.Point(244, 150);
+            this.btnSaveCategory.Location = new System.Drawing.Point(29, 101);
             this.btnSaveCategory.Name = "btnSaveCategory";
             this.btnSaveCategory.Size = new System.Drawing.Size(36, 35);
             this.btnSaveCategory.TabIndex = 12;
@@ -218,9 +218,9 @@ namespace SaglikliYER
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(35, 71);
+            this.label7.Location = new System.Drawing.Point(26, 70);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 16);
+            this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "Description :";
             // 
@@ -229,13 +229,13 @@ namespace SaglikliYER
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 16);
+            this.label6.Size = new System.Drawing.Size(86, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "Category Name :";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(135, 67);
+            this.txtDescription.Location = new System.Drawing.Point(98, 60);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(145, 77);
@@ -243,9 +243,9 @@ namespace SaglikliYER
             // 
             // txtCategoryName2
             // 
-            this.txtCategoryName2.Location = new System.Drawing.Point(135, 34);
+            this.txtCategoryName2.Location = new System.Drawing.Point(98, 34);
             this.txtCategoryName2.Name = "txtCategoryName2";
-            this.txtCategoryName2.Size = new System.Drawing.Size(145, 22);
+            this.txtCategoryName2.Size = new System.Drawing.Size(145, 20);
             this.txtCategoryName2.TabIndex = 0;
             // 
             // groupBox3
@@ -255,9 +255,9 @@ namespace SaglikliYER
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.txtDescription);
             this.groupBox3.Controls.Add(this.txtCategoryName2);
-            this.groupBox3.Location = new System.Drawing.Point(313, 21);
+            this.groupBox3.Location = new System.Drawing.Point(258, 21);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(290, 202);
+            this.groupBox3.Size = new System.Drawing.Size(256, 144);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Category";
@@ -288,9 +288,9 @@ namespace SaglikliYER
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(390, 174);
+            this.btnBack.Location = new System.Drawing.Point(486, 23);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(90, 50);
+            this.btnBack.Size = new System.Drawing.Size(74, 28);
             this.btnBack.TabIndex = 10;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -301,9 +301,9 @@ namespace SaglikliYER
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(500, 168);
+            this.btnUpdate.Location = new System.Drawing.Point(501, 53);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 56);
+            this.btnUpdate.Size = new System.Drawing.Size(59, 34);
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -312,7 +312,7 @@ namespace SaglikliYER
             // 
             this.pbFood.Location = new System.Drawing.Point(390, 19);
             this.pbFood.Name = "pbFood";
-            this.pbFood.Size = new System.Drawing.Size(185, 143);
+            this.pbFood.Size = new System.Drawing.Size(85, 68);
             this.pbFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFood.TabIndex = 15;
             this.pbFood.TabStop = false;
@@ -330,7 +330,7 @@ namespace SaglikliYER
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(18, 19);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(356, 208);
+            this.listView1.Size = new System.Drawing.Size(366, 76);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -352,13 +352,13 @@ namespace SaglikliYER
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btnBack);
             this.groupBox4.Controls.Add(this.btnUpdate);
+            this.groupBox4.Controls.Add(this.btnBack);
             this.groupBox4.Controls.Add(this.pbFood);
             this.groupBox4.Controls.Add(this.listView1);
-            this.groupBox4.Location = new System.Drawing.Point(6, 229);
+            this.groupBox4.Location = new System.Drawing.Point(6, 188);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(597, 245);
+            this.groupBox4.Size = new System.Drawing.Size(570, 89);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Update Food";
@@ -368,10 +368,10 @@ namespace SaglikliYER
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.groupBox1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Location = new System.Drawing.Point(2, 8);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(616, 482);
+            this.groupBox2.Size = new System.Drawing.Size(585, 284);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adding Group";
@@ -385,7 +385,7 @@ namespace SaglikliYER
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(639, 502);
+            this.ClientSize = new System.Drawing.Size(599, 296);
             this.Controls.Add(this.groupBox2);
             this.Name = "FormUrunEkleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

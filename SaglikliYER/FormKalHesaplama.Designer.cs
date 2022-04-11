@@ -50,7 +50,7 @@ namespace SaglikliYER
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(504, 8);
+            this.btnBack.Location = new System.Drawing.Point(445, 20);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(143, 37);
             this.btnBack.TabIndex = 11;
@@ -87,7 +87,7 @@ namespace SaglikliYER
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 69);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(655, 279);
+            this.listView1.Size = new System.Drawing.Size(576, 150);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -95,22 +95,22 @@ namespace SaglikliYER
             // columnHeader2
             // 
             this.columnHeader2.Text = "FoodName";
-            this.columnHeader2.Width = 176;
+            this.columnHeader2.Width = 129;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "CategoryName";
-            this.columnHeader3.Width = 177;
+            this.columnHeader3.Width = 134;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Calorie";
-            this.columnHeader4.Width = 154;
+            this.columnHeader4.Width = 103;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Protein";
-            this.columnHeader5.Width = 138;
+            this.columnHeader5.Width = 81;
             // 
             // groupBox1
             // 
@@ -128,18 +128,18 @@ namespace SaglikliYER
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(341, 351);
+            this.label2.Location = new System.Drawing.Point(262, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(326, 13);
+            this.label2.Size = new System.Drawing.Size(310, 13);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Listelenen ürünlerin değerleri 100 gram üzerinden hesaplanmaktadır.";
+            this.label2.Text = "The values ​​of the listed products are calculated over 100 grams.";
             // 
             // FormKalHesaplama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(679, 368);
+            this.ClientSize = new System.Drawing.Size(590, 244);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);

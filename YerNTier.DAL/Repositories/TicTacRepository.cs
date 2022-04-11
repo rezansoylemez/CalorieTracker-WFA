@@ -24,8 +24,7 @@ namespace YerNTier.DAL.Repositories
         }
         public TicTac ShowTicTacString(int _userID)
         {
-            TicTac ticTac = context.TicTacs.Where(a => a.DUserID ==_userID).SingleOrDefault();
-            return ticTac;
+            return context.TicTacs.Where(a => a.DUserID == _userID).FirstOrDefault();
         }
         public TicTac GetByFoodID(int _ticTacID)
         {

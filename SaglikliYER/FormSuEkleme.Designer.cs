@@ -31,6 +31,7 @@ namespace SaglikliYER
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuEkleme));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@ namespace SaglikliYER
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,10 +82,20 @@ namespace SaglikliYER
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(329, 253);
+            this.groupBox1.Size = new System.Drawing.Size(431, 200);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Drink Water";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(291, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 21);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "ml";
             // 
             // button15
             // 
@@ -94,9 +104,9 @@ namespace SaglikliYER
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(263, 152);
+            this.button15.Location = new System.Drawing.Point(378, 149);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(39, 38);
+            this.button15.Size = new System.Drawing.Size(32, 30);
             this.button15.TabIndex = 29;
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click);
@@ -108,9 +118,9 @@ namespace SaglikliYER
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(204, 152);
+            this.button14.Location = new System.Drawing.Point(378, 108);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(39, 38);
+            this.button14.Size = new System.Drawing.Size(32, 30);
             this.button14.TabIndex = 28;
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
@@ -122,9 +132,9 @@ namespace SaglikliYER
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(145, 152);
+            this.button13.Location = new System.Drawing.Point(319, 108);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(39, 38);
+            this.button13.Size = new System.Drawing.Size(32, 30);
             this.button13.TabIndex = 27;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
@@ -136,9 +146,9 @@ namespace SaglikliYER
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(86, 152);
+            this.button12.Location = new System.Drawing.Point(378, 64);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(39, 38);
+            this.button12.Size = new System.Drawing.Size(32, 30);
             this.button12.TabIndex = 26;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
@@ -150,9 +160,9 @@ namespace SaglikliYER
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(27, 152);
+            this.button11.Location = new System.Drawing.Point(319, 64);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(39, 38);
+            this.button11.Size = new System.Drawing.Size(32, 30);
             this.button11.TabIndex = 25;
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
@@ -166,7 +176,7 @@ namespace SaglikliYER
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Location = new System.Drawing.Point(263, 108);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(39, 38);
+            this.button10.Size = new System.Drawing.Size(32, 30);
             this.button10.TabIndex = 24;
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -180,7 +190,7 @@ namespace SaglikliYER
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Location = new System.Drawing.Point(204, 108);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(39, 38);
+            this.button9.Size = new System.Drawing.Size(32, 30);
             this.button9.TabIndex = 23;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
@@ -194,7 +204,7 @@ namespace SaglikliYER
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(145, 108);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(39, 38);
+            this.button8.Size = new System.Drawing.Size(32, 30);
             this.button8.TabIndex = 22;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -208,7 +218,7 @@ namespace SaglikliYER
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(86, 108);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(39, 38);
+            this.button7.Size = new System.Drawing.Size(32, 30);
             this.button7.TabIndex = 21;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -222,7 +232,7 @@ namespace SaglikliYER
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(27, 108);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 38);
+            this.button6.Size = new System.Drawing.Size(32, 30);
             this.button6.TabIndex = 20;
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -236,7 +246,7 @@ namespace SaglikliYER
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(263, 64);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 38);
+            this.button5.Size = new System.Drawing.Size(32, 30);
             this.button5.TabIndex = 19;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -250,7 +260,7 @@ namespace SaglikliYER
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(204, 64);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 38);
+            this.button4.Size = new System.Drawing.Size(32, 30);
             this.button4.TabIndex = 18;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -264,7 +274,7 @@ namespace SaglikliYER
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(145, 64);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 38);
+            this.button3.Size = new System.Drawing.Size(32, 30);
             this.button3.TabIndex = 17;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -278,7 +288,7 @@ namespace SaglikliYER
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(86, 64);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 38);
+            this.button2.Size = new System.Drawing.Size(32, 30);
             this.button2.TabIndex = 16;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -304,7 +314,7 @@ namespace SaglikliYER
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(291, 207);
+            this.label2.Location = new System.Drawing.Point(269, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 21);
             this.label2.TabIndex = 7;
@@ -313,7 +323,7 @@ namespace SaglikliYER
             // txtDrunkWater
             // 
             this.txtDrunkWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDrunkWater.Location = new System.Drawing.Point(239, 207);
+            this.txtDrunkWater.Location = new System.Drawing.Point(217, 158);
             this.txtDrunkWater.Name = "txtDrunkWater";
             this.txtDrunkWater.ReadOnly = true;
             this.txtDrunkWater.Size = new System.Drawing.Size(52, 24);
@@ -324,7 +334,7 @@ namespace SaglikliYER
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(62, 215);
+            this.label1.Location = new System.Drawing.Point(40, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 16);
             this.label1.TabIndex = 5;
@@ -339,7 +349,7 @@ namespace SaglikliYER
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(27, 64);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 38);
+            this.button1.Size = new System.Drawing.Size(32, 30);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -351,29 +361,19 @@ namespace SaglikliYER
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(12, 271);
+            this.btnBack.Location = new System.Drawing.Point(459, 34);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(119, 30);
             this.btnBack.TabIndex = 10;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(291, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 21);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "ml";
-            // 
             // FormSuEkleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(353, 309);
+            this.ClientSize = new System.Drawing.Size(590, 244);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
             this.Name = "FormSuEkleme";

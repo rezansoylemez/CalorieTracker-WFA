@@ -106,13 +106,14 @@ namespace SaglikliYER
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(310, 392);
+            this.ClientSize = new System.Drawing.Size(317, 397);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormNotification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNotification";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormNotification_FormClosed);
             this.Load += new System.EventHandler(this.FormNotification_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

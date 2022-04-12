@@ -233,6 +233,7 @@ namespace SaglikliYER
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnKacKalori);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";

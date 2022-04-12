@@ -168,6 +168,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";

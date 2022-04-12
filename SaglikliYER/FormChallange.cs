@@ -28,7 +28,8 @@ namespace SaglikliYER
 
         }
         int sUserID;
-        public FormChallange(int _userID)
+        string language;
+        public FormChallange(int _userID,string _language)
         {
             InitializeComponent();
             userService = new UserService();
@@ -36,6 +37,7 @@ namespace SaglikliYER
             userDatailsServece = new UserDatailsServece();
             mealService = new MealService();
             sUserID = _userID;
+            language = _language;
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -53,7 +55,10 @@ namespace SaglikliYER
                 UserDetail userDetail = userDatailsServece.GetUserDetailByID(sUserID);
                 info.SenderName = userDetail.UserName;
                 userInfoService.AddMess(info);
-                MessageBox.Show("Tebrik ettiniz");
+                if (language == "Eng")
+                    MessageBox.Show("You Congratulated");
+                else if (language == "Tr")
+                    MessageBox.Show("Tebrik ettiniz");
             }
             catch (Exception ex)
             {
@@ -73,7 +78,10 @@ namespace SaglikliYER
                 UserDetail userDetail = userDatailsServece.GetUserDetailByID(sUserID);
                 info.SenderName = userDetail.UserName;
                 userInfoService.AddMess(info);
-                MessageBox.Show("Challenge Davet ettiniz");
+                if(language=="Eng")
+                    MessageBox.Show("You Did Challenge");
+                else if (language=="Tr")
+                    MessageBox.Show("Challenge Davet ettiniz");
             }
             catch (Exception ex)
             {

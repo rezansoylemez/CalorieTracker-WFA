@@ -110,6 +110,7 @@ namespace SaglikliYER
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormNotification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNotification";

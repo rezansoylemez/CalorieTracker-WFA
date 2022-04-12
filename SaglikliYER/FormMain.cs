@@ -20,13 +20,13 @@ namespace SaglikliYER
             InitializeComponent();
         }
         int userID;
-        string langue;
-        public FormMain(int _userID,string _langue)
+        string language;
+        public FormMain(int _userID, string _language)
         {
             InitializeComponent();
             userID = _userID;
             userService = new UserService();
-            langue = _langue;
+            language = _language;
         }
 
         private void btnDrinkWater_Click(object sender, EventArgs e)
@@ -48,8 +48,13 @@ namespace SaglikliYER
                 this.Hide();
                 urunEkleme.Show();
             }
-            else MessageBox.Show("Your level is not enough for adding food. " +
-                "You need to spend more time in the program to level up.");
+            else
+            {
+               if (language == "Eng") MessageBox.Show("Your level is not enough for adding food. " +
+                  "You need to spend more time in the program to level up.");
+               else if(language=="Tr") MessageBox.Show("Seviyeniz yiyecek eklemek için yeterli değil. " +
+                    "Seviye atlamak için programda daha fazla zaman harcamanız gerekiyor");
+            }
         }
 
         private void btnCalculator_Click(object sender, EventArgs e)
@@ -70,7 +75,7 @@ namespace SaglikliYER
 
         private void btnMeal_Click(object sender, EventArgs e)
         {
-            FormMeal meal = new FormMeal(userID,langue);
+            FormMeal meal = new FormMeal(userID, language);
             meal.Owner = this;
             this.Hide();
             meal.Show();
@@ -78,7 +83,7 @@ namespace SaglikliYER
 
         private void btnChallange_Click(object sender, EventArgs e)
         {
-            FormChallange challange = new FormChallange(userID);
+            FormChallange challange = new FormChallange(userID,language);
             challange.Owner = this;
             this.Hide();
             challange.Show();
@@ -91,7 +96,10 @@ namespace SaglikliYER
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            switch (langue)
+            timer1.Start();
+            timer2.Start();
+            timer3.Start();
+            switch (language)
             {
                   case "Eng":
                     //    label3.Text = "Tab to drink water !!";
@@ -108,6 +116,14 @@ namespace SaglikliYER
                     groupBox9.Text = "Your Meal";
                     groupBox7.Text = "Your Challenge";
                     groupBox10.Text = "Your Reports";
+                    groupBox5.Text = "Cal. Calculate";
+                    label5.Text = "To see the calorie and protein values ​​of your food";
+                    grpChallenge.Text = "Challenge";
+                    label3.Text = "To reach the Challenge screen";
+                    groupBox6.Text = "Add Food";
+                    label6.Text = "You can add food depending on the level.";
+                    groupBox8.Text = "Drink Water";
+                    label7.Text = "The screen with your water consumption information";
                     //button5.Enabled = false;
                     //button6.Enabled = false;
                     //button7.Enabled = false;
@@ -130,6 +146,14 @@ namespace SaglikliYER
                     groupBox9.Text = "Öğünlerin";
                     groupBox7.Text = "Challenge";
                     groupBox4.Text = "Yiyecek Eklemek";
+                    groupBox5.Text = "Cal. Hesap";
+                    label5.Text = "Yiyeceklerinizin kalori ve protein değerlerini görmek için";
+                    grpChallenge.Text = "Challenge";
+                    label3.Text = "Challenge ekranına ulaşmak için";
+                    groupBox6.Text = "Yiyecek Ekle";
+                    label6.Text = "Seviyeye bağlı olarak yiyecek ekleyebilirsin.";
+                    groupBox8.Text = "Su İçmek";
+                    label7.Text = "Su tüketim bilgilerinizin olduğu ekran";
                     //button5.Enabled = false;
                     //button6.Enabled = false;
                     //button7.Enabled = false;
@@ -150,7 +174,7 @@ namespace SaglikliYER
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormSettings formSettings = new FormSettings(userID,langue);
+            FormSettings formSettings = new FormSettings(userID, language);
             formSettings.Owner = this;
             this.Hide();
             formSettings.Show();
@@ -175,24 +199,94 @@ namespace SaglikliYER
         {
             DUser dUser = userService.GetUserByUserID(userID);
             count++;
-
-            if (count != 0 && count % 20 == 0)
+            if (count != 0 && count % 100 == 0)
             {
                 dUser.Level += 1;
                 userService.userUpdateForLevel(userID, dUser);
-                MessageBox.Show("Level Up !! Your level = " + dUser.Level);
+                if (language == "Eng")
+                {
+                    if (time %2==0)
+                    {
+                        label4.Visible = true;
+                        label4.Text = "You Are Level Up. WellDone!!!" + dUser.Level;
+                    }
+                    else label4.Visible = false;
+                }
+                else if (language == "Tr")
+                {
+                    if (time % 2 == 0)
+                    {
+                        label4.Visible = true;
+                        label4.Text = "Seviye Atladın. Tebrikler!!!" + dUser.Level;
+                    }
+                    else label4.Visible = false;//şuraya bir bak 
+                }
             }
         }
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Owner.Show();
             timer1.Stop();
+            timer2.Stop();
+            timer3.Stop();
+        }
+        int count2 = 0;
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            count2++;
+            if (count2==35) grpEatMeal.Visible = true;
+            else if (count2 == 70)
+            {
+                grpEatMeal.Visible = false;
+                grpYourReport.Visible = true;
+            }
+            else if (count2 == 105)
+            {
+                grpEatMeal.Visible = false;
+                grpYourReport.Visible = false;
+                grpChallenge.Visible = true;
+            }
+            else if (count2 == 140)
+            {
+                grpEatMeal.Visible = false;
+                grpYourReport.Visible = false;
+                grpChallenge.Visible = false;
+            }
+        }
+        int time=0;
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
 
-        private void groupBox9_MouseHover(object sender, EventArgs e)
+        private void button5_MouseDown(object sender, MouseEventArgs e)
         {
-            FormInfo formInfo = new FormInfo();
-            formInfo.ShowDialog();
+            groupBox5.Visible = true;
+        }
+
+        private void button5_MouseUp(object sender, MouseEventArgs e)
+        {
+            groupBox5.Visible = false;
+        }
+
+        private void button4_MouseUp(object sender, MouseEventArgs e)
+        {
+            groupBox6.Visible = false;
+        }
+
+        private void button4_MouseDown(object sender, MouseEventArgs e)
+        {
+            groupBox6.Visible = true;
+        }
+
+        private void button3_MouseUp(object sender, MouseEventArgs e)
+        {
+            groupBox8.Visible = false;
+        }
+
+        private void button3_MouseDown(object sender, MouseEventArgs e)
+        {
+            groupBox8.Visible = true;
         }
     }
 }

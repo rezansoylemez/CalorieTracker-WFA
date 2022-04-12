@@ -17,10 +17,12 @@ namespace SaglikliYER
     public partial class FormUrunEkleme : Form
     {
         FoodService foodService;
-        public FormUrunEkleme()
+        string language;
+        public FormUrunEkleme(string _language)
         {
             InitializeComponent();
             foodService = new FoodService();
+            language = _language;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -41,7 +43,10 @@ namespace SaglikliYER
                 food.Protein = nudProtein.Value;
                 foodService.Update(food);
                 listviewDoldur();
-                MessageBox.Show("Complete Successfully!");
+                if(language=="Eng")
+                    MessageBox.Show("Complete Successfully!");
+                else if (language=="Tr")
+                    MessageBox.Show("Başarıyla Tamamlayın!!");
                 ClearItems();
             }
             catch (Exception ex)
@@ -64,7 +69,10 @@ namespace SaglikliYER
                 food.CategoryID = Convert.ToInt32(cmbCategoryName.SelectedValue); //seçilen kategorinin indexi tag de taşınır
                 foodService.Insert(food);
                 listviewDoldur();
-                MessageBox.Show("Complete Successfully!");
+                if (language == "Eng")
+                    MessageBox.Show("Complete Successfully!");
+                else if (language == "Tr")
+                    MessageBox.Show("Başarıyla Tamamlayın!!");
                 ClearItems();
             }
             catch (Exception ex)
@@ -125,7 +133,10 @@ namespace SaglikliYER
                 foodCategory.CategoryName = txtCategoryName2.Text;
                 foodCategory.Description = txtDescription.Text;
                 foodService.InsertFoodCategory(foodCategory);
-                MessageBox.Show("Complete Successfully!");
+                if (language == "Eng")
+                    MessageBox.Show("Complete Successfully!");
+                else if (language == "Tr")
+                    MessageBox.Show("Başarıyla Tamamlayın!!");
                 CmbCategoryDoldur();
                 ClearItems();
             }
@@ -171,7 +182,10 @@ namespace SaglikliYER
                 Food food = new Food();
                 food.FoodID = (int)listView1.SelectedItems[0].Tag;
                 foodService.Delete(food);
-                MessageBox.Show("Complete Successfully!");
+                if (language == "Eng")
+                    MessageBox.Show("Complete Successfully!");
+                else if (language == "Tr")
+                    MessageBox.Show("Başarıyla Tamamlayın!!");
                 listviewDoldur();
             }
             catch (Exception ex)

@@ -25,14 +25,14 @@ namespace SaglikliYER
             foodService = new FoodService();
         }
         int userID;
-        string langue;
-        public FormMeal(int _userID,string _langue)
+        string language;
+        public FormMeal(int _userID,string _language)
         {
             InitializeComponent();
             userID = _userID;
             mealService = new MealService();
             foodService = new FoodService();
-            langue = _langue;
+            language = _language;
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -45,12 +45,27 @@ namespace SaglikliYER
             {
                 if (listView1.SelectedItems[0].Tag == null)
                 {
-                    if (langue == "Eng") MessageBox.Show("Please choose a food.");
-                    else if (langue == "Tr") MessageBox.Show("Lütfen bir yemek seçin.");
+                    if (language == "Eng") MessageBox.Show("Please choose a food.");
+                    else if (language == "Tr") MessageBox.Show("Lütfen bir yemek seçin.");
                     return;
                 }
                 Food food2 = foodService.GetByFoodIdCheck((int)cmbFood.SelectedValue);
                 int k = 0;
+                if ((Portion)cmbPortion.SelectedIndex == Portion.Gram)
+                {
+                    k = 1;
+                }
+                else if ((Portion)cmbPortion.SelectedIndex == Portion.Portion400gr) k = 400;
+                else
+                {
+                    MessageBox.Show("Please choose a portion.");
+                    return;
+                }
+                if (nudQuantity.Value == 0)
+                {
+                    MessageBox.Show("Please increase the quantity.");
+                    return;
+                }
                 if ((Portion)cmbPortion.SelectedIndex == Portion.Gram) k = 1;
                 else k = 400;
                 EatenFood food = new EatenFood();
@@ -61,11 +76,10 @@ namespace SaglikliYER
                 food.EatenQuantity = (decimal)nudQuantity.Value;
                 food.EatenProtein = (k * food.EatenQuantity * food2.Protein) / 100;
                 food.EatenColorie = (k * food.EatenQuantity * food2.Calorie) / 100;
-
                 mealService.Update((int)listView1.SelectedItems[0].Tag, food);
 
-                if (langue == "Eng") MessageBox.Show("Food is updated.");
-                else if (langue == "Tr") MessageBox.Show("Yemek güncellendi");
+                if (language == "Eng") MessageBox.Show("Food is updated.");
+                else if (language == "Tr") MessageBox.Show("Yemek güncellendi");
                 FillListview();
             }
             catch (Exception ex)
@@ -82,16 +96,15 @@ namespace SaglikliYER
                 meal.DUserID = userID;
                 if (comboBox1.SelectedItem == null)
                 {
-                    if (langue == "Eng") MessageBox.Show("Please choose a meal.");
-                    else if (langue == "Tr") MessageBox.Show("Lütfen bir yemek seçin.");
+                    if (language == "Eng") MessageBox.Show("Please choose a meal.");
+                    else if (language == "Tr") MessageBox.Show("Lütfen bir yemek seçin.");
                     return;
                 }
                 meal.MealName = comboBox1.SelectedItem.ToString();
                 meal.MealDate = dtpMealDate.Value;
                 mealService.Insert(meal);
-
-                if(langue == "Eng") MessageBox.Show("Meal is added.");
-                else if (langue == "Tr") MessageBox.Show("Öğün Eklendi");
+                if(language == "Eng") MessageBox.Show("Meal is added.");
+                else if (language == "Tr") MessageBox.Show("Öğün Eklendi");
                 lbDoldur();
                 cmbDoldur();
             }
@@ -102,7 +115,7 @@ namespace SaglikliYER
         }
         private void FormMeal_Load(object sender, EventArgs e)
         {
-            switch (langue)
+            switch (language)
             {
                 case "Eng":
                     label9.Text = "Meal Name :";
@@ -183,19 +196,33 @@ namespace SaglikliYER
             {
                 if (listBox1.SelectedValue == null)
                 {
-                    if (langue == "Eng") MessageBox.Show("Please choose a meal from meal list.");
-                    else if (langue == "Tr") MessageBox.Show("Lütfen yemek listesinden bir yemek seçin.");
+                    if (language == "Eng") MessageBox.Show("Please choose a meal from meal list.");
+                    else if (language == "Tr") MessageBox.Show("Lütfen yemek listesinden bir yemek seçin.");
                     return;
                 }
                 int selMealID = (int)listBox1.SelectedValue;
                 Meal meal = mealService.GetByMealId(selMealID);
-
                 Food food2 = foodService.GetByFoodIdCheck((int)cmbFood.SelectedValue);
-
                 int k = 0;
+                if ((Portion)cmbPortion.SelectedIndex == Portion.Gram)
+                {
+                    k = 1;
+                }
+                else if ((Portion)cmbPortion.SelectedIndex == Portion.Portion400gr) k = 400;
+                else
+                {
+                    if(language=="Eng") MessageBox.Show("Please choose a portion.");
+                    else if (language=="Tr") MessageBox.Show("Lütfen Porsiyon seçiniz");
+                    return;
+                }
+                if (nudQuantity.Value == 0)
+                {
+                    if (language == "Eng") MessageBox.Show("Please increase the quantity.");
+                    else if (language == "Tr") MessageBox.Show("Lütfen Miktar bilgisini giriniz.");
+                    return;
+                }
                 if ((Portion)cmbPortion.SelectedIndex == Portion.Gram) k = 1;
                 else k = 400;
-
                 EatenFood food = new EatenFood();
                 food.FoodID = food2.FoodID;
                 food.EatenCategoryID = food2.CategoryID;
@@ -204,11 +231,9 @@ namespace SaglikliYER
                 food.EatenQuantity = (decimal)nudQuantity.Value;
                 food.EatenProtein = (k * food.EatenQuantity * food2.Protein) / 100;
                 food.EatenColorie = (k * food.EatenQuantity * food2.Calorie) / 100;
-
                 mealService.AddFoodsToMeals(meal, food);
-                if (langue == "Eng") MessageBox.Show("Food is added.");
-                else if (langue == "Tr") MessageBox.Show("Yiyecek Eklendi");
-
+                if (language == "Eng") MessageBox.Show("Food is added.");
+                else if (language == "Tr") MessageBox.Show("Yiyecek Eklendi");
                 lbDoldur();
                 cmbDoldur();
                 FillListview();
@@ -250,25 +275,29 @@ namespace SaglikliYER
             {
                 Meal meal = mealService.GetByMealId(Convert.ToInt32(listBox1.SelectedValue));
                 mealService.CDelete(meal);
-                if (langue == "Eng") MessageBox.Show("Meal is deleted");
-                else if (langue == "Tr") MessageBox.Show("Öğün Silindi");
+                if (language == "Eng") MessageBox.Show("Meal is deleted");
+                else if (language == "Tr") MessageBox.Show("Öğün Silindi");
                 lbDoldur();
                 listView1.Items.Clear();
             }
         }
-
         private void silToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             EatenFood eatenFood = mealService.GetByEatenFoodId((int)listView1.SelectedItems[0].Tag);
             mealService.Delete(eatenFood);
-            if (langue == "Eng") MessageBox.Show("Food is deleted");
-            else if (langue == "Tr") MessageBox.Show("Yiyecek Silindi");
+            if (language == "Eng") MessageBox.Show("Food is deleted");
+            else if (language == "Tr") MessageBox.Show("Yiyecek Silindi");
             FillListview();
         }
 
         private void FormMeal_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Owner.Show();
+        }
+
+        private void btnBackk_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

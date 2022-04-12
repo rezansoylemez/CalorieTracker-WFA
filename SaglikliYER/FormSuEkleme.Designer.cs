@@ -376,6 +376,7 @@ namespace SaglikliYER
             this.ClientSize = new System.Drawing.Size(590, 244);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSuEkleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSuEkleme";

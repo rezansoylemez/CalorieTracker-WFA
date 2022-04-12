@@ -16,13 +16,13 @@ namespace SaglikliYER
         {
             InitializeComponent();
         }
-        string langue;
+        string language;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(langue)) MessageBox.Show("Choose Langue");
+            if (String.IsNullOrEmpty(language)) MessageBox.Show("Choose Language");
             else
             {
-                FormLogin login = new FormLogin(langue);
+                FormLogin login = new FormLogin(language);
                 login.Owner = this;
                 this.Hide();
                 login.Show();
@@ -31,10 +31,10 @@ namespace SaglikliYER
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(langue)) MessageBox.Show("Choose Langue");
+            if (String.IsNullOrEmpty(language)) MessageBox.Show("Choose Langue");
             else
             {
-                FormSignUp signUp = new FormSignUp(langue);
+                FormSignUp signUp = new FormSignUp(language);
                 signUp.Owner = this;
                 this.Hide();
                 signUp.Show();
@@ -43,7 +43,7 @@ namespace SaglikliYER
 
         private void btnKacKalori_Click(object sender, EventArgs e)
         {
-            FormKalHesaplama kalHesaplama = new FormKalHesaplama(langue);
+            FormKalHesaplama kalHesaplama = new FormKalHesaplama(language);
             kalHesaplama.Owner = this;
             this.Hide();
             kalHesaplama.Show();
@@ -99,11 +99,11 @@ namespace SaglikliYER
 
         private void btnEng_Click(object sender, EventArgs e)
         {
-            langue = "Eng";
+            language = "Eng";
         }
         private void btnTr_Click(object sender, EventArgs e)
         {
-            langue = "Tr";
+            language = "Tr";
         }
     }
 }

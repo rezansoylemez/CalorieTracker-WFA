@@ -73,7 +73,7 @@ namespace SaglikliYER
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(577, 105);
+            this.listView1.Size = new System.Drawing.Size(577, 145);
             this.listView1.TabIndex = 22;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -86,7 +86,7 @@ namespace SaglikliYER
             // columnHeader3
             // 
             this.columnHeader3.Text = "TakenFood";
-            this.columnHeader3.Width = 94;
+            this.columnHeader3.Width = 102;
             // 
             // columnHeader1
             // 
@@ -96,12 +96,12 @@ namespace SaglikliYER
             // columnHeader2
             // 
             this.columnHeader2.Text = "Quantity";
-            this.columnHeader2.Width = 67;
+            this.columnHeader2.Width = 91;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "Calorie";
-            this.columnHeader6.Width = 65;
+            this.columnHeader6.Width = 62;
             // 
             // columnHeader7
             // 
@@ -117,9 +117,9 @@ namespace SaglikliYER
             // 
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(202, 123);
+            this.groupBox3.Location = new System.Drawing.Point(169, 163);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(90, 101);
+            this.groupBox3.Size = new System.Drawing.Size(75, 77);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Month";
@@ -131,9 +131,9 @@ namespace SaglikliYER
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(6, 21);
+            this.button3.Location = new System.Drawing.Point(4, 20);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 71);
+            this.button3.Size = new System.Drawing.Size(65, 51);
             this.button3.TabIndex = 23;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnAy_Click);
@@ -142,9 +142,9 @@ namespace SaglikliYER
             // 
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(107, 123);
+            this.groupBox2.Location = new System.Drawing.Point(91, 163);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(90, 101);
+            this.groupBox2.Size = new System.Drawing.Size(72, 77);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Week";
@@ -156,9 +156,9 @@ namespace SaglikliYER
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(2, 21);
+            this.button1.Location = new System.Drawing.Point(6, 21);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 69);
+            this.button1.Size = new System.Drawing.Size(64, 49);
             this.button1.TabIndex = 23;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnHafta_Click);
@@ -167,9 +167,9 @@ namespace SaglikliYER
             // 
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 123);
+            this.groupBox1.Location = new System.Drawing.Point(12, 163);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(90, 101);
+            this.groupBox1.Size = new System.Drawing.Size(73, 77);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Daily";
@@ -181,9 +181,9 @@ namespace SaglikliYER
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(6, 24);
+            this.button2.Location = new System.Drawing.Point(6, 21);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 68);
+            this.button2.Size = new System.Drawing.Size(62, 51);
             this.button2.TabIndex = 23;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnGun_Click);
@@ -195,9 +195,9 @@ namespace SaglikliYER
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(466, 174);
+            this.btnBack.Location = new System.Drawing.Point(517, 197);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(81, 43);
+            this.btnBack.Size = new System.Drawing.Size(72, 35);
             this.btnBack.TabIndex = 23;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -210,9 +210,9 @@ namespace SaglikliYER
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.Color.Red;
-            this.groupBox4.Location = new System.Drawing.Point(297, 124);
+            this.groupBox4.Location = new System.Drawing.Point(250, 168);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(131, 100);
+            this.groupBox4.Size = new System.Drawing.Size(131, 72);
             this.groupBox4.TabIndex = 27;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Your Total Reports ";
@@ -264,9 +264,9 @@ namespace SaglikliYER
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.ForeColor = System.Drawing.Color.Red;
-            this.groupBox5.Location = new System.Drawing.Point(435, 124);
+            this.groupBox5.Location = new System.Drawing.Point(384, 168);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(134, 51);
+            this.groupBox5.Size = new System.Drawing.Size(118, 72);
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Most Eaten Food";
@@ -284,6 +284,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReports";

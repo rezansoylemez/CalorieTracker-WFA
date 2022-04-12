@@ -144,6 +144,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.listView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormKalHesaplama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKalHesaplama";

@@ -25,14 +25,14 @@ namespace SaglikliYER
             userDatailsServece = new UserDatailsServece();
             passwordService = new PasswordService();
         }
-        string langue;
-        public FormSignUp(string _langue)
+        string language;
+        public FormSignUp(string _language)
         {
             InitializeComponent();
             userService = new UserService();
             userDatailsServece = new UserDatailsServece();
             passwordService = new PasswordService();
-            langue = _langue;
+            language = _language;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -50,8 +50,8 @@ namespace SaglikliYER
                     {
                         if (!txtEmail.Text.Contains("@") || !txtEmail.Text.EndsWith(".com"))
                         {
-                            if (langue == "Eng") MessageBox.Show("Please type a correct email.");
-                            else if (langue == "Tr") MessageBox.Show("Lütfen doğru bir e - posta yazın.");
+                            if (language == "Eng") MessageBox.Show("Please type a correct email.");
+                            else if (language == "Tr") MessageBox.Show("Lütfen doğru bir e - posta yazın.");
                             return;
                         }
                         passwordService.CheckPasswordText(txtPassword1.Text);
@@ -67,8 +67,8 @@ namespace SaglikliYER
                         else
                         {
 
-                            if (langue == "Eng") MessageBox.Show("Choose Your Goals");
-                            else if (langue == "Tr") MessageBox.Show("Hedeflerinizi Seçin");
+                            if (language == "Eng") MessageBox.Show("Choose Your Goals");
+                            else if (language == "Tr") MessageBox.Show("Hedeflerinizi Seçin");
                             return;
                         }
                         userService.AddUser(dUser);
@@ -98,8 +98,8 @@ namespace SaglikliYER
                     numBoy.Value = 0;
                     numKilo.Value = 0;
                 }
-                if (langue == "Eng") MessageBox.Show("Passwords do not match.");
-                else if(langue == "Tr") MessageBox.Show("Şifreler uyuşmuyor."); 
+                if (language == "Eng") MessageBox.Show("Passwords do not match.");
+                else if(language == "Tr") MessageBox.Show("Şifreler uyuşmuyor."); 
             }
             catch (Exception ex)
             {
@@ -151,10 +151,10 @@ namespace SaglikliYER
         }
         private void btnQuestions_Click(object sender, EventArgs e)
         {
-            if(langue=="Eng")
+            if(language == "Eng")
                MessageBox.Show("At least 6 characters" +
                     "Use at least one Number, one Uppercase and Lowercase!");
-            else if (langue=="Tr")
+            else if (language == "Tr")
                 MessageBox.Show("En az 6 karakter." +
                     "En az bir Rakam, bir Büyük Harf ve Küçük Harf Kullanın !");
         }
@@ -164,12 +164,12 @@ namespace SaglikliYER
 
             if (PassLevel(txtPassword1.Text) == "Weak..")
             {
-                if (langue == "Eng")
+                if (language == "Eng")
                 {
                     lblDerece1.ForeColor = Color.Red;
                     lblDerece1.Text = "Weak..";
                 }
-                else if (langue == "Tr")
+                else if (language == "Tr")
                 {
                     lblDerece1.ForeColor = Color.Red;
                     lblDerece1.Text = "Kolay..";
@@ -177,12 +177,12 @@ namespace SaglikliYER
             }
             else if (PassLevel(txtPassword1.Text) == "Normal..")
             {
-                if (langue == "Eng")
+                if (language == "Eng")
                 {
                     lblDerece1.ForeColor = Color.Orange;
                     lblDerece1.Text = "Normal..";
                 }
-                else if (langue == "Tr")
+                else if (language == "Tr")
                 {
                     lblDerece1.ForeColor = Color.Orange;
                     lblDerece1.Text = "Normal..";
@@ -190,12 +190,12 @@ namespace SaglikliYER
             }
             else if (PassLevel(txtPassword1.Text) == "Strong..")
             {
-                if (langue == "Eng")
+                if (language == "Eng")
                 {
                     lblDerece1.ForeColor = Color.Green;
                     lblDerece1.Text = "Strong..";
                 }
-                else if (langue == "Tr")
+                else if (language == "Tr")
                 {
                     lblDerece1.ForeColor = Color.Green;
                     lblDerece1.Text = "Zor..";
@@ -221,7 +221,7 @@ namespace SaglikliYER
 
         private void FormSignUp_Load(object sender, EventArgs e)
         {
-            switch (langue)
+            switch (language)
             {
                 case "Eng":
                     label1.Text = "E-mail :";
@@ -267,7 +267,6 @@ namespace SaglikliYER
                     break;
             }
         }
-
         private void FormSignUp_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Owner.Show();

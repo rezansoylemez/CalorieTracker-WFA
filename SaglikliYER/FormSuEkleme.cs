@@ -21,17 +21,18 @@ namespace SaglikliYER
             InitializeComponent();
             waterService = new WaterService();
         }
-        public FormSuEkleme(int dUserID)
+        string language;
+        public FormSuEkleme(int dUserID,string _language)
         {
             InitializeComponent();
             waterService = new WaterService();
             UserDatailsServece = new UserDatailsServece();
             userID = dUserID;
+            language = _language;
         }
         int userID ;
         private void btnBack_Click(object sender, EventArgs e)
         {
-            //içilen suyu database gönderir
             try
             {
                 int _quantity = Convert.ToInt32(txtDrunkWater.Text);
@@ -41,26 +42,20 @@ namespace SaglikliYER
             {
                 MessageBox.Show(ex.Message);
             }
-
             this.Close();
         }
 
         private void FormSuEkleme_Load(object sender, EventArgs e)
         {
             UserDetail userDetail = UserDatailsServece.GetUserDetailByID(userID);
-            
-            //database deki daha önce içtiği suyu getirir
             try
             {
                 txtDrunkWater.Text= waterService.WaterQuantity(userID).ToString();
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
-
-            //girilen kg ye göre içmesi gereken suyu yazdırır
             if (userDetail.Weight<50)
             {
                 txtWater.Text = "1800";
@@ -93,8 +88,6 @@ namespace SaglikliYER
             {
                 txtWater.Text = "3900";
             }
-
-            //daha önce içilmiş sua göre butonu görünmez yapma
             if (Convert.ToInt32(txtDrunkWater.Text) - 300 >= 0) button1.Visible = false;
             if (Convert.ToInt32(txtDrunkWater.Text) - 600 >= 0) button2.Visible = false;
             if (Convert.ToInt32(txtDrunkWater.Text) - 900 >= 0) button3.Visible = false;
@@ -112,10 +105,11 @@ namespace SaglikliYER
             if (Convert.ToInt32(txtDrunkWater.Text) - 4500 >= 0)
             {
                 button15.Visible = false;
-                MessageBox.Show("Bugün yeterince su içtin !! Yoksa su zehirlenmesi olabilirsin Allah Muhafaza !! ");
+                if(language=="Eng")
+                   MessageBox.Show("Bugün yeterince su içtin !! Bu Yeterli !! ");
+                else if (language=="Tr")
+                   MessageBox.Show("Do not drink for today!! That's enough !! ");
             }
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)

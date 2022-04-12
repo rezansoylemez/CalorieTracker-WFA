@@ -60,6 +60,7 @@ namespace SaglikliYER
             this.btnFoodUpdate = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBackk = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
@@ -157,7 +158,7 @@ namespace SaglikliYER
             this.btnAddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddFood.FlatAppearance.BorderSize = 0;
             this.btnAddFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFood.Location = new System.Drawing.Point(259, 95);
+            this.btnAddFood.Location = new System.Drawing.Point(170, 93);
             this.btnAddFood.Name = "btnAddFood";
             this.btnAddFood.Size = new System.Drawing.Size(42, 30);
             this.btnAddFood.TabIndex = 15;
@@ -308,6 +309,7 @@ namespace SaglikliYER
             // 
             // grpFood
             // 
+            this.grpFood.Controls.Add(this.btnBackk);
             this.grpFood.Controls.Add(this.pictureBox1);
             this.grpFood.Controls.Add(this.nudQuantity);
             this.grpFood.Controls.Add(this.btnFoodUpdate);
@@ -340,7 +342,7 @@ namespace SaglikliYER
             this.btnFoodUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFoodUpdate.FlatAppearance.BorderSize = 0;
             this.btnFoodUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFoodUpdate.Location = new System.Drawing.Point(184, 95);
+            this.btnFoodUpdate.Location = new System.Drawing.Point(126, 93);
             this.btnFoodUpdate.Name = "btnFoodUpdate";
             this.btnFoodUpdate.Size = new System.Drawing.Size(38, 30);
             this.btnFoodUpdate.TabIndex = 16;
@@ -368,6 +370,20 @@ namespace SaglikliYER
             this.dateTimePicker1.Value = new System.DateTime(2022, 3, 31, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // btnBackk
+            // 
+            this.btnBackk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBackk.BackgroundImage")));
+            this.btnBackk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBackk.FlatAppearance.BorderSize = 0;
+            this.btnBackk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBackk.Location = new System.Drawing.Point(245, 91);
+            this.btnBackk.Name = "btnBackk";
+            this.btnBackk.Size = new System.Drawing.Size(60, 32);
+            this.btnBackk.TabIndex = 25;
+            this.btnBackk.UseVisualStyleBackColor = true;
+            this.btnBackk.Click += new System.EventHandler(this.btnBackk_Click);
+            // 
             // FormMeal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +396,7 @@ namespace SaglikliYER
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMeal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMeal";
@@ -427,5 +444,6 @@ namespace SaglikliYER
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem1;
         private System.Windows.Forms.Button btnMealDelete;
+        private System.Windows.Forms.Button btnBackk;
     }
 }

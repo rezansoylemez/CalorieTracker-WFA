@@ -80,12 +80,6 @@
     <Compile Include="FormGiris.designer.cs">
       <DependentUpon>FormGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInfo.Designer.cs">
-      <DependentUpon>FormInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormKalHesaplama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,9 +159,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGiris.resx">
       <DependentUpon>FormGiris.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInfo.resx">
-      <DependentUpon>FormInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKalHesaplama.resx">
       <DependentUpon>FormKalHesaplama.cs</DependentUpon>

@@ -56,6 +56,7 @@ namespace SaglikliYER
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -312,12 +313,26 @@ namespace SaglikliYER
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(12, 194);
+            this.btnBack.Location = new System.Drawing.Point(12, 203);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(114, 29);
+            this.btnBack.Size = new System.Drawing.Size(62, 29);
             this.btnBack.TabIndex = 31;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExit.Location = new System.Drawing.Point(82, 195);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(62, 45);
+            this.btnExit.TabIndex = 31;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FormSettings
             // 
@@ -325,6 +340,7 @@ namespace SaglikliYER
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(590, 244);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -373,5 +389,6 @@ namespace SaglikliYER
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelMail;
         private System.Windows.Forms.Label labelAge;
+        private System.Windows.Forms.Button btnExit;
     }
 }

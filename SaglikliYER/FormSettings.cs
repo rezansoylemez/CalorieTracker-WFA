@@ -144,5 +144,12 @@ namespace SaglikliYER
         {
             this.Owner.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            FormGiris formGiris = new FormGiris();
+            this.Close();
+            formGiris.Show();
+        }
     }
 }

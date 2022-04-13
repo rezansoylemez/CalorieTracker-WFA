@@ -68,6 +68,8 @@ namespace SaglikliYER
             this.label4 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.lbDeneme = new System.Windows.Forms.Label();
             this.groupBox7.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -497,9 +499,9 @@ namespace SaglikliYER
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(160, 9);
+            this.label4.Location = new System.Drawing.Point(171, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 13);
+            this.label4.Size = new System.Drawing.Size(217, 18);
             this.label4.TabIndex = 35;
             this.label4.Text = "You Are Level Up. WellDone!!!";
             this.label4.Visible = false;
@@ -512,12 +514,28 @@ namespace SaglikliYER
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // lbDeneme
+            // 
+            this.lbDeneme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbDeneme.ForeColor = System.Drawing.Color.Red;
+            this.lbDeneme.Location = new System.Drawing.Point(456, 115);
+            this.lbDeneme.Name = "lbDeneme";
+            this.lbDeneme.Size = new System.Drawing.Size(106, 33);
+            this.lbDeneme.TabIndex = 35;
+            this.lbDeneme.Text = "You Are Level Up. WellDone!!!";
+            this.lbDeneme.Visible = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(590, 262);
+            this.Controls.Add(this.lbDeneme);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnNotif);
             this.Controls.Add(this.btnOyun);
@@ -586,5 +604,7 @@ namespace SaglikliYER
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Label lbDeneme;
     }
 }

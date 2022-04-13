@@ -237,6 +237,7 @@ namespace SaglikliYER
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
+            this.Load += new System.EventHandler(this.FormGiris_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -246,7 +247,6 @@ namespace SaglikliYER
         }
 
         #endregion
-
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem lllllllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem smSaglikliYer;

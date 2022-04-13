@@ -31,7 +31,7 @@ namespace SaglikliYER
 
         private void btnDrinkWater_Click(object sender, EventArgs e)
         {
-            FormSuEkleme suEkleme = new FormSuEkleme(userID);
+            FormSuEkleme suEkleme = new FormSuEkleme(userID,language);
             suEkleme.Owner = this;
             this.Hide();
             suEkleme.Show();
@@ -43,7 +43,7 @@ namespace SaglikliYER
 
             if (dUser.Level >= 5)
             {
-                FormUrunEkleme urunEkleme = new FormUrunEkleme();
+                FormUrunEkleme urunEkleme = new FormUrunEkleme(language);
                 urunEkleme.Owner = this;
                 this.Hide();
                 urunEkleme.Show();
@@ -98,16 +98,10 @@ namespace SaglikliYER
         {
             timer1.Start();
             timer2.Start();
-            timer3.Start();
+            timer4.Start();
             switch (language)
             {
                   case "Eng":
-                    //    label3.Text = "Tab to drink water !!";
-                    //    label2.Text = "Tab to eat food !!";
-                    //    label4.Text = "Tab to calculate calorie !!";
-                    //    label8.Text = "Tab for reports !!";
-                    //    label6.Text = "Tab to your challange !!";
-                    //    label7.Text = "Tab to your meals !!";
                     groupBox2.Text = "What Do You Wish";
                     groupBox3.Text = "Calculate Cal.";
                     groupBox2.Text = "Your Reports";
@@ -115,7 +109,7 @@ namespace SaglikliYER
                     groupBox4.Text = "Add Food";
                     groupBox9.Text = "Your Meal";
                     groupBox7.Text = "Your Challenge";
-                    groupBox10.Text = "Your Reports";
+                    groupBox10.Text = "What Do You Want";
                     groupBox5.Text = "Cal. Calculate";
                     label5.Text = "To see the calorie and protein values ​​of your food";
                     grpChallenge.Text = "Challenge";
@@ -124,25 +118,13 @@ namespace SaglikliYER
                     label6.Text = "You can add food depending on the level.";
                     groupBox8.Text = "Drink Water";
                     label7.Text = "The screen with your water consumption information";
-                    //button5.Enabled = false;
-                    //button6.Enabled = false;
-                    //button7.Enabled = false;
-                    //button13.Enabled = false;
-                    //button14.Enabled = false;
-                    //button15.Enabled = false;
                     break;
                 case "Tr":
-                    //label3.Text = "Su içmek için basınız !!";
-                    //label2.Text = "Yiyecek eklemek için basınız !!";
-                    //label4.Text = "Kalori hesabı yapmak için !!";
-                    //label8.Text = "Raporlar için basınız !!";
-                    //label6.Text = "Challangelar için basınız !!";
-                    //label7.Text = "Öğünlerin için basınız !!";
                     groupBox2.Text = "Ne Yapmak İstersin";
                     groupBox3.Text = "Kalori Hesabı";
                     groupBox2.Text = "Raporların";
                     groupBox1.Text = "Su içmek";
-                    groupBox10.Text = "Raporların";
+                    groupBox10.Text = "Ne Yapmak İstersin";
                     groupBox9.Text = "Öğünlerin";
                     groupBox7.Text = "Challenge";
                     groupBox4.Text = "Yiyecek Eklemek";
@@ -154,12 +136,6 @@ namespace SaglikliYER
                     label6.Text = "Seviyeye bağlı olarak yiyecek ekleyebilirsin.";
                     groupBox8.Text = "Su İçmek";
                     label7.Text = "Su tüketim bilgilerinizin olduğu ekran";
-                    //button5.Enabled = false;
-                    //button6.Enabled = false;
-                    //button7.Enabled = false;
-                    //button13.Enabled = false;
-                    //button14.Enabled = false;
-                    //button15.Enabled = false;
                     break;
             }
         }
@@ -199,29 +175,24 @@ namespace SaglikliYER
         {
             DUser dUser = userService.GetUserByUserID(userID);
             count++;
-            if (count != 0 && count % 100 == 0)
+            if (count != 0 && count % 100 == 0 && denemeCount != 0 || denemeCount % 100 == 0 || denemeCount % 101 == 0 ||  denemeCount % 102 == 0 || denemeCount % 103 == 0 || denemeCount % 104 == 0 || denemeCount % 105 == 0)
             {
                 dUser.Level += 1;
                 userService.userUpdateForLevel(userID, dUser);
+                label4.Visible = true;
                 if (language == "Eng")
                 {
-                    if (time %2==0)
-                    {
-                        label4.Visible = true;
-                        label4.Text = "You Are Level Up. WellDone!!!" + dUser.Level;
-                    }
-                    else label4.Visible = false;
+                    label4.Visible = true;
+                    label4.Text = "You Are Level Up. WellDone !!!" + dUser.Level;
+
                 }
                 else if (language == "Tr")
                 {
-                    if (time % 2 == 0)
-                    {
-                        label4.Visible = true;
-                        label4.Text = "Seviye Atladın. Tebrikler!!!" + dUser.Level;
-                    }
-                    else label4.Visible = false;//şuraya bir bak 
+                    label4.Visible = true;
+                    label4.Text = "Seviye Atladın. Tebrikler !!!" + dUser.Level;
                 }
             }
+            else label4.Visible = false;
         }
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -287,6 +258,11 @@ namespace SaglikliYER
         private void button3_MouseDown(object sender, MouseEventArgs e)
         {
             groupBox8.Visible = true;
+        }
+        int denemeCount=0;
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            denemeCount++;
         }
     }
 }

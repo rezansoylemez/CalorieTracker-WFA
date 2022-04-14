@@ -47,7 +47,6 @@ namespace SaglikliYER
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblDerece1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lblDerece = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnShowPass = new System.Windows.Forms.Button();
@@ -80,9 +79,9 @@ namespace SaglikliYER
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(459, 184);
+            this.btnBack.Location = new System.Drawing.Point(476, 184);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(119, 37);
+            this.btnBack.Size = new System.Drawing.Size(102, 37);
             this.btnBack.TabIndex = 14;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -95,7 +94,7 @@ namespace SaglikliYER
             0,
             0,
             131072});
-            this.numKilo.Location = new System.Drawing.Point(78, 137);
+            this.numKilo.Location = new System.Drawing.Point(83, 137);
             this.numKilo.Maximum = new decimal(new int[] {
             200,
             0,
@@ -113,7 +112,7 @@ namespace SaglikliYER
             0,
             0,
             131072});
-            this.numBoy.Location = new System.Drawing.Point(79, 94);
+            this.numBoy.Location = new System.Drawing.Point(84, 99);
             this.numBoy.Maximum = new decimal(new int[] {
             250,
             0,
@@ -125,7 +124,7 @@ namespace SaglikliYER
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Silver;
+            this.groupBox3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox3.Controls.Add(this.numKilo);
             this.groupBox3.Controls.Add(this.numBoy);
             this.groupBox3.Controls.Add(this.dateTimeBirth);
@@ -138,9 +137,9 @@ namespace SaglikliYER
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox3.Location = new System.Drawing.Point(235, 12);
+            this.groupBox3.Location = new System.Drawing.Point(257, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(209, 217);
+            this.groupBox3.Size = new System.Drawing.Size(216, 216);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "User Details";
@@ -148,14 +147,14 @@ namespace SaglikliYER
             // dateTimeBirth
             // 
             this.dateTimeBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeBirth.Location = new System.Drawing.Point(78, 170);
+            this.dateTimeBirth.Location = new System.Drawing.Point(83, 170);
             this.dateTimeBirth.Name = "dateTimeBirth";
             this.dateTimeBirth.Size = new System.Drawing.Size(125, 20);
             this.dateTimeBirth.TabIndex = 5;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(78, 58);
+            this.txtSurname.Location = new System.Drawing.Point(83, 58);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(125, 20);
             this.txtSurname.TabIndex = 0;
@@ -163,7 +162,7 @@ namespace SaglikliYER
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 176);
+            this.label7.Location = new System.Drawing.Point(5, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 1;
@@ -182,7 +181,7 @@ namespace SaglikliYER
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(24, 30);
+            this.label3.Location = new System.Drawing.Point(30, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 1;
@@ -190,7 +189,7 @@ namespace SaglikliYER
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(78, 27);
+            this.txtName.Location = new System.Drawing.Point(83, 27);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(125, 20);
             this.txtName.TabIndex = 0;
@@ -198,7 +197,7 @@ namespace SaglikliYER
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 101);
+            this.label5.Location = new System.Drawing.Point(24, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 1;
@@ -215,16 +214,16 @@ namespace SaglikliYER
             // 
             // txtPassword2
             // 
-            this.txtPassword2.Location = new System.Drawing.Point(71, 93);
+            this.txtPassword2.Location = new System.Drawing.Point(87, 90);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
-            this.txtPassword2.Size = new System.Drawing.Size(138, 20);
+            this.txtPassword2.Size = new System.Drawing.Size(148, 20);
             this.txtPassword2.TabIndex = 0;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 97);
+            this.label8.Location = new System.Drawing.Point(6, 94);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 13);
             this.label8.TabIndex = 1;
@@ -232,10 +231,9 @@ namespace SaglikliYER
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Silver;
+            this.groupBox2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox2.Controls.Add(this.lblDerece1);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.lblDerece);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtEmail);
             this.groupBox2.Controls.Add(this.btnShowPass);
@@ -248,7 +246,7 @@ namespace SaglikliYER
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(217, 157);
+            this.groupBox2.Size = new System.Drawing.Size(244, 157);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Register";
@@ -256,35 +254,25 @@ namespace SaglikliYER
             // lblDerece1
             // 
             this.lblDerece1.AutoSize = true;
-            this.lblDerece1.Location = new System.Drawing.Point(127, 135);
+            this.lblDerece1.Location = new System.Drawing.Point(122, 133);
             this.lblDerece1.Name = "lblDerece1";
-            this.lblDerece1.Size = new System.Drawing.Size(48, 13);
+            this.lblDerece1.Size = new System.Drawing.Size(0, 13);
             this.lblDerece1.TabIndex = 14;
-            this.lblDerece1.Text = "label10";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(0, 135);
+            this.label9.Location = new System.Drawing.Point(8, 133);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 13);
             this.label9.TabIndex = 3;
             this.label9.Text = "Pass Difficult Level :";
             // 
-            // lblDerece
-            // 
-            this.lblDerece.AutoSize = true;
-            this.lblDerece.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDerece.Location = new System.Drawing.Point(195, 126);
-            this.lblDerece.Name = "lblDerece";
-            this.lblDerece.Size = new System.Drawing.Size(0, 13);
-            this.lblDerece.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 33);
+            this.label1.Location = new System.Drawing.Point(26, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 1;
@@ -292,19 +280,19 @@ namespace SaglikliYER
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(71, 30);
+            this.txtEmail.Location = new System.Drawing.Point(87, 27);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(138, 20);
+            this.txtEmail.Size = new System.Drawing.Size(148, 20);
             this.txtEmail.TabIndex = 0;
             // 
             // btnShowPass
             // 
-            this.btnShowPass.BackColor = System.Drawing.Color.Silver;
+            this.btnShowPass.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnShowPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowPass.BackgroundImage")));
             this.btnShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowPass.FlatAppearance.BorderSize = 0;
             this.btnShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowPass.Location = new System.Drawing.Point(189, 58);
+            this.btnShowPass.Location = new System.Drawing.Point(216, 57);
             this.btnShowPass.Name = "btnShowPass";
             this.btnShowPass.Size = new System.Drawing.Size(20, 23);
             this.btnShowPass.TabIndex = 13;
@@ -313,31 +301,31 @@ namespace SaglikliYER
             // 
             // btnQuestions
             // 
-            this.btnQuestions.BackColor = System.Drawing.Color.Silver;
+            this.btnQuestions.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnQuestions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuestions.BackgroundImage")));
             this.btnQuestions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuestions.FlatAppearance.BorderSize = 0;
             this.btnQuestions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuestions.Location = new System.Drawing.Point(185, 137);
+            this.btnQuestions.Location = new System.Drawing.Point(208, 132);
             this.btnQuestions.Name = "btnQuestions";
-            this.btnQuestions.Size = new System.Drawing.Size(28, 13);
+            this.btnQuestions.Size = new System.Drawing.Size(26, 19);
             this.btnQuestions.TabIndex = 13;
             this.btnQuestions.UseVisualStyleBackColor = false;
             this.btnQuestions.Click += new System.EventHandler(this.btnQuestions_Click);
             // 
             // txtPassword1
             // 
-            this.txtPassword1.Location = new System.Drawing.Point(71, 62);
+            this.txtPassword1.Location = new System.Drawing.Point(87, 59);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.PasswordChar = '*';
-            this.txtPassword1.Size = new System.Drawing.Size(116, 20);
+            this.txtPassword1.Size = new System.Drawing.Size(126, 20);
             this.txtPassword1.TabIndex = 0;
             this.txtPassword1.TextChanged += new System.EventHandler(this.txtPassword1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 65);
+            this.label2.Location = new System.Drawing.Point(6, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 1;
@@ -346,7 +334,7 @@ namespace SaglikliYER
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(127, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(132, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,16 +353,16 @@ namespace SaglikliYER
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Silver;
+            this.groupBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.radioWoman);
             this.groupBox1.Controls.Add(this.radioMan);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(1, 172);
+            this.groupBox1.Location = new System.Drawing.Point(12, 168);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(228, 67);
+            this.groupBox1.Size = new System.Drawing.Size(242, 67);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gender";
@@ -393,7 +381,7 @@ namespace SaglikliYER
             // radioMan
             // 
             this.radioMan.AutoSize = true;
-            this.radioMan.Location = new System.Drawing.Point(175, 22);
+            this.radioMan.Location = new System.Drawing.Point(180, 22);
             this.radioMan.Name = "radioMan";
             this.radioMan.Size = new System.Drawing.Size(49, 17);
             this.radioMan.TabIndex = 2;
@@ -403,7 +391,7 @@ namespace SaglikliYER
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -454,7 +442,7 @@ namespace SaglikliYER
             this.groupBox4.Controls.Add(this.radioKeep);
             this.groupBox4.Controls.Add(this.radioGain);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox4.Location = new System.Drawing.Point(459, 12);
+            this.groupBox4.Location = new System.Drawing.Point(476, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(102, 91);
             this.groupBox4.TabIndex = 15;
@@ -465,8 +453,8 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(590, 244);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(591, 240);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox3);
@@ -523,7 +511,6 @@ namespace SaglikliYER
         private System.Windows.Forms.RadioButton radioWoman;
         private System.Windows.Forms.RadioButton radioMan;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblDerece;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnShowPass;
         private System.Windows.Forms.RadioButton radioKeep;

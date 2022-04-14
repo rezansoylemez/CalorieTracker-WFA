@@ -52,15 +52,14 @@ namespace SaglikliYER
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.silToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.grpFood = new System.Windows.Forms.GroupBox();
+            this.btnBackk = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnFoodUpdate = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnBackk = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
@@ -76,7 +75,7 @@ namespace SaglikliYER
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.btnMealSave);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(12, 135);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(255, 123);
@@ -124,13 +123,13 @@ namespace SaglikliYER
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 30);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.Size = new System.Drawing.Size(78, 13);
             this.label9.TabIndex = 0;
             this.label9.Text = "Meal Name :";
             // 
             // btnMealSave
             // 
-            this.btnMealSave.BackColor = System.Drawing.Color.Silver;
+            this.btnMealSave.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnMealSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMealSave.BackgroundImage")));
             this.btnMealSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMealSave.FlatAppearance.BorderSize = 0;
@@ -147,13 +146,13 @@ namespace SaglikliYER
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 66);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 13);
+            this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 0;
             this.label8.Text = "Meal Date :";
             // 
             // btnAddFood
             // 
-            this.btnAddFood.BackColor = System.Drawing.Color.Silver;
+            this.btnAddFood.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnAddFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddFood.BackgroundImage")));
             this.btnAddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddFood.FlatAppearance.BorderSize = 0;
@@ -220,7 +219,7 @@ namespace SaglikliYER
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(135, 21);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(37, 13);
+            this.label13.Size = new System.Drawing.Size(43, 13);
             this.label13.TabIndex = 0;
             this.label13.Text = "Food :";
             // 
@@ -229,7 +228,7 @@ namespace SaglikliYER
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(135, 72);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 13);
+            this.label11.Size = new System.Drawing.Size(62, 13);
             this.label11.TabIndex = 0;
             this.label11.Text = "Quantity :";
             // 
@@ -238,7 +237,7 @@ namespace SaglikliYER
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(135, 48);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 13);
+            this.label10.Size = new System.Drawing.Size(55, 13);
             this.label10.TabIndex = 0;
             this.label10.Text = "Portion :";
             // 
@@ -249,14 +248,13 @@ namespace SaglikliYER
             this.columnHeader4,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader5});
             this.listView1.ContextMenuStrip = this.contextMenuStrip2;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(119, 12);
+            this.listView1.Location = new System.Drawing.Point(118, 12);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(444, 117);
             this.listView1.TabIndex = 4;
@@ -288,11 +286,6 @@ namespace SaglikliYER
             this.columnHeader5.Text = "MealDate";
             this.columnHeader5.Width = 81;
             // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Picture";
-            this.columnHeader6.Width = 96;
-            // 
             // contextMenuStrip2
             // 
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -319,13 +312,27 @@ namespace SaglikliYER
             this.grpFood.Controls.Add(this.label13);
             this.grpFood.Controls.Add(this.label10);
             this.grpFood.Controls.Add(this.label11);
-            this.grpFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grpFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.grpFood.Location = new System.Drawing.Point(273, 135);
             this.grpFood.Name = "grpFood";
             this.grpFood.Size = new System.Drawing.Size(309, 131);
             this.grpFood.TabIndex = 17;
             this.grpFood.TabStop = false;
             this.grpFood.Text = "Food";
+            // 
+            // btnBackk
+            // 
+            this.btnBackk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBackk.BackgroundImage")));
+            this.btnBackk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBackk.FlatAppearance.BorderSize = 0;
+            this.btnBackk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBackk.Location = new System.Drawing.Point(245, 91);
+            this.btnBackk.Name = "btnBackk";
+            this.btnBackk.Size = new System.Drawing.Size(60, 32);
+            this.btnBackk.TabIndex = 25;
+            this.btnBackk.UseVisualStyleBackColor = true;
+            this.btnBackk.Click += new System.EventHandler(this.btnBackk_Click);
             // 
             // pictureBox1
             // 
@@ -370,25 +377,11 @@ namespace SaglikliYER
             this.dateTimePicker1.Value = new System.DateTime(2022, 3, 31, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // btnBackk
-            // 
-            this.btnBackk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBackk.BackgroundImage")));
-            this.btnBackk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBackk.FlatAppearance.BorderSize = 0;
-            this.btnBackk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBackk.Location = new System.Drawing.Point(245, 91);
-            this.btnBackk.Name = "btnBackk";
-            this.btnBackk.Size = new System.Drawing.Size(60, 32);
-            this.btnBackk.TabIndex = 25;
-            this.btnBackk.UseVisualStyleBackColor = true;
-            this.btnBackk.Click += new System.EventHandler(this.btnBackk_Click);
-            // 
             // FormMeal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(590, 265);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.listBox1);
@@ -433,7 +426,6 @@ namespace SaglikliYER
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.GroupBox grpFood;
         private System.Windows.Forms.Button btnMealSave;
         private System.Windows.Forms.Button btnFoodUpdate;

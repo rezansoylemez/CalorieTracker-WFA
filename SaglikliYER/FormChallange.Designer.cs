@@ -35,25 +35,22 @@ namespace SaglikliYER
             this.btnCongratulations = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
             this.btnChallange = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtSearcUser = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBack
@@ -73,9 +70,9 @@ namespace SaglikliYER
             // 
             this.groupBox6.Controls.Add(this.btnCongratulations);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox6.Location = new System.Drawing.Point(494, 139);
+            this.groupBox6.Location = new System.Drawing.Point(370, 94);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(80, 80);
+            this.groupBox6.Size = new System.Drawing.Size(80, 81);
             this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Congratulations";
@@ -86,9 +83,9 @@ namespace SaglikliYER
             this.btnCongratulations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCongratulations.FlatAppearance.BorderSize = 0;
             this.btnCongratulations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCongratulations.Location = new System.Drawing.Point(9, 16);
+            this.btnCongratulations.Location = new System.Drawing.Point(13, 26);
             this.btnCongratulations.Name = "btnCongratulations";
-            this.btnCongratulations.Size = new System.Drawing.Size(65, 58);
+            this.btnCongratulations.Size = new System.Drawing.Size(53, 47);
             this.btnCongratulations.TabIndex = 13;
             this.btnCongratulations.UseVisualStyleBackColor = true;
             this.btnCongratulations.Click += new System.EventHandler(this.btnCongratulations_Click);
@@ -99,9 +96,9 @@ namespace SaglikliYER
             this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(3, 19);
+            this.btnRefresh.Location = new System.Drawing.Point(6, 15);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(76, 63);
+            this.btnRefresh.Size = new System.Drawing.Size(67, 61);
             this.btnRefresh.TabIndex = 13;
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -110,50 +107,26 @@ namespace SaglikliYER
             // 
             this.groupBox4.Controls.Add(this.btnRefresh);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox4.Location = new System.Drawing.Point(403, 134);
+            this.groupBox4.Location = new System.Drawing.Point(491, 94);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(85, 86);
+            this.groupBox4.Size = new System.Drawing.Size(81, 81);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Refresh";
             // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Weight";
-            this.columnHeader10.Width = 99;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Days";
-            this.columnHeader9.Width = 79;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Total Calorie";
-            this.columnHeader8.Width = 92;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Surname";
-            this.columnHeader7.Width = 97;
-            // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "E-mail";
-            this.columnHeader6.Width = 120;
+            this.columnHeader6.Width = 183;
             // 
             // listView2
             // 
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
+            this.columnHeader6});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(6, 21);
+            this.listView2.Location = new System.Drawing.Point(6, 16);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(381, 206);
+            this.listView2.Size = new System.Drawing.Size(189, 206);
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -164,9 +137,9 @@ namespace SaglikliYER
             this.btnChallange.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChallange.FlatAppearance.BorderSize = 0;
             this.btnChallange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChallange.Location = new System.Drawing.Point(6, 16);
+            this.btnChallange.Location = new System.Drawing.Point(9, 17);
             this.btnChallange.Name = "btnChallange";
-            this.btnChallange.Size = new System.Drawing.Size(71, 57);
+            this.btnChallange.Size = new System.Drawing.Size(62, 52);
             this.btnChallange.TabIndex = 13;
             this.btnChallange.UseVisualStyleBackColor = true;
             this.btnChallange.Click += new System.EventHandler(this.btnChallange_Click);
@@ -175,9 +148,9 @@ namespace SaglikliYER
             // 
             this.groupBox5.Controls.Add(this.btnChallange);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox5.Location = new System.Drawing.Point(494, 55);
+            this.groupBox5.Location = new System.Drawing.Point(258, 94);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(80, 73);
+            this.groupBox5.Size = new System.Drawing.Size(80, 81);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Challenge";
@@ -186,67 +159,79 @@ namespace SaglikliYER
             // 
             this.groupBox3.Controls.Add(this.listView2);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(4, 0);
+            this.groupBox3.Location = new System.Drawing.Point(12, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(393, 236);
+            this.groupBox3.Size = new System.Drawing.Size(202, 231);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "All User Details";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(12, 15);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(64, 57);
-            this.btnSearch.TabIndex = 13;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnSearch);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(403, 50);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(85, 78);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Search";
+            this.groupBox3.Text = "All Users";
             // 
             // txtSearcUser
             // 
             this.txtSearcUser.Location = new System.Drawing.Point(6, 15);
             this.txtSearcUser.Name = "txtSearcUser";
-            this.txtSearcUser.Size = new System.Drawing.Size(158, 22);
+            this.txtSearcUser.Size = new System.Drawing.Size(196, 22);
             this.txtSearcUser.TabIndex = 0;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtSearcUser);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(401, 12);
+            this.groupBox1.Location = new System.Drawing.Point(252, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(179, 43);
+            this.groupBox1.Size = new System.Drawing.Size(208, 48);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search User";
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(12, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 52);
+            this.button1.TabIndex = 13;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Location = new System.Drawing.Point(491, 7);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(81, 81);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Search";
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(491, 185);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 37);
+            this.button2.TabIndex = 28;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormChallange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(582, 231);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormChallange";
@@ -258,9 +243,9 @@ namespace SaglikliYER
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -272,18 +257,15 @@ namespace SaglikliYER
         private System.Windows.Forms.Button btnCongratulations;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button btnChallange;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtSearcUser;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button2;
     }
 }

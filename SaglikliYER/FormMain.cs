@@ -111,6 +111,12 @@ namespace SaglikliYER
                     groupBox7.Text = "Your Challenge";
                     groupBox10.Text = "What Do You Want";
                     groupBox5.Text = "Cal. Calculate";
+                    grpEatMeal.Text = "Eat Meal";
+                    grpYourReport.Text = "Your Reports";
+                    grpChallenge.Text = "Your Challenge";
+                    label3.Text = "You can see all the challenges here";
+                    label2.Text = "You can see the details of all the foods you eat.";
+                    label1.Text = "Here you can manage your meals";
                     label5.Text = "To see the calorie and protein values ​​of your food";
                     grpChallenge.Text = "Challenge";
                     label3.Text = "To reach the Challenge screen";
@@ -129,6 +135,12 @@ namespace SaglikliYER
                     groupBox7.Text = "Challenge";
                     groupBox4.Text = "Yiyecek Eklemek";
                     groupBox5.Text = "Cal. Hesap";
+                    grpEatMeal.Text = "Öğün Ekle";
+                    grpYourReport.Text = "Raporların";
+                    grpChallenge.Text = "Meydan Okuma";
+                    label3.Text = "Buradan tüm challengelarını görebilirsin";
+                    label2.Text = "Tüm yediğin yiyeceklerin detayını bilgilerini görebilirsin.";
+                    label1.Text = "Buradan öğünlerini yönetebilirsin";
                     label5.Text = "Yiyeceklerinizin kalori ve protein değerlerini görmek için";
                     grpChallenge.Text = "Challenge";
                     label3.Text = "Challenge ekranına ulaşmak için";
@@ -175,24 +187,19 @@ namespace SaglikliYER
         {
             DUser dUser = userService.GetUserByUserID(userID);
             count++;
-            if (count != 0 && count % 100 == 0 && denemeCount != 0 || denemeCount % 100 == 0 || denemeCount % 101 == 0 ||  denemeCount % 102 == 0 || denemeCount % 103 == 0 || denemeCount % 104 == 0 || denemeCount % 105 == 0)
+
+            if (count != 0 && count % 100 == 0 )
             {
+
                 dUser.Level += 1;
                 userService.userUpdateForLevel(userID, dUser);
+                if (language=="Eng")
+                    label4.Text = "Well Done You Are Level Up!! " + dUser.Level;
+                else if (language=="Tr")
+                    label4.Text = "Tebrikler Seviye Atladın !! " + dUser.Level;
                 label4.Visible = true;
-                if (language == "Eng")
-                {
-                    label4.Visible = true;
-                    label4.Text = "You Are Level Up. WellDone !!!" + dUser.Level;
-
-                }
-                else if (language == "Tr")
-                {
-                    label4.Visible = true;
-                    label4.Text = "Seviye Atladın. Tebrikler !!!" + dUser.Level;
-                }
+                timer3.Start();
             }
-            else label4.Visible = false;
         }
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -200,6 +207,8 @@ namespace SaglikliYER
             timer1.Stop();
             timer2.Stop();
             timer3.Stop();
+            timer4.Stop();
+
         }
         int count2 = 0;
         private void timer2_Tick(object sender, EventArgs e)
@@ -224,10 +233,16 @@ namespace SaglikliYER
                 grpChallenge.Visible = false;
             }
         }
-        int time=0;
+        int time = 0;
         private void timer3_Tick(object sender, EventArgs e)
         {
             time++;
+            if (time==7)
+            {
+                label4.Visible = false;
+                timer3.Stop();
+                time = 0;
+            }
         }
 
         private void button5_MouseDown(object sender, MouseEventArgs e)

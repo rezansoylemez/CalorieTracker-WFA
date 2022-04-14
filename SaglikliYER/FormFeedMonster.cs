@@ -53,7 +53,6 @@ namespace SaglikliYER
             pbHam.Location = new Point(1000, 1000);
             pbHav.Location = new Point(1000, 1000);
             pbSos.Location = new Point(1000, 1000);
-
         }
         int skor = 0;
         int sayac2 = 0;
@@ -66,15 +65,12 @@ namespace SaglikliYER
             if (radioButton1.Checked) level = 750;
             else if (radioButton2.Checked) level = 500;
             else if (radioButton3.Checked) level = 250;
-
             sayac = 0;
             sayac2 = 0;
             sayac3 = 0;
             skor = 0;
             timer1.Interval = level;
             timer1.Start();
-            label3.Visible = false;
-            label4.Visible = false;
             groupBox1.Visible = false;
         }
 
@@ -172,14 +168,9 @@ namespace SaglikliYER
                 timer1.Stop();
                 MessageBox.Show($"Your Score = {skor}");
                 label1.Text = ($"Best Score = {skor}");
-
-                label3.Visible = true;
-                label4.Visible = true;
                 groupBox1.Visible = true;
-
             }
         }
-
 
         private void FormFeedMonster_KeyDown(object sender, KeyEventArgs e)
         {

@@ -38,6 +38,19 @@ namespace YerNTier.DAL.Strategy
                 Description = "Kuruyemişler içerir."
             };
             yerDBcontext.FoodCategories.Add(foodCategory4);
+            FoodCategory foodCategory5 = new FoodCategory
+            {
+                CategoryName = "Kahvaltılık",
+                Description = "Kahvaltılıkları içerir."
+            };
+            yerDBcontext.FoodCategories.Add(foodCategory5);
+            FoodCategory foodCategory6 = new FoodCategory
+            {
+                CategoryName = "Atıştırmalık",
+                Description = "Atıştırmalık içerir."
+            };
+            yerDBcontext.FoodCategories.Add(foodCategory6);
+
             yerDBcontext.SaveChanges();
 
             Food food = new Food()
@@ -209,6 +222,78 @@ namespace YerNTier.DAL.Strategy
                 FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\muz.jpg"
             };
             yerDBcontext.Foods.Add(food13);
+            Food food14 = new Food()
+            {
+                FoodName = "Süzme Peynir",
+                Calorie = 100,
+                Protein = 11,
+                CategoryID = 5,
+                Portion = Portion.Gram,
+                Quantity = 100,
+                FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\beyazPeynir.jpg"
+            };
+            yerDBcontext.Foods.Add(food14);
+
+            Food food15 = new Food()
+            {
+                FoodName = "Göğermiş Peynir",
+                Calorie = 304,
+                Protein = 15,
+                CategoryID = 5,
+                Portion = Portion.Gram,
+                Quantity = 100,
+                FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\GögermisPeynir.jpg"
+            };
+            yerDBcontext.Foods.Add(food15);
+
+            Food food16 = new Food()
+            {
+                FoodName = "Haşlanmış Yumurta",
+                Calorie = 155,
+                Protein = 13,
+                CategoryID = 6,
+                Portion = Portion.Gram,
+                Quantity = 100,
+                FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\HaslanmisYumurta.jpg"
+            };
+            yerDBcontext.Foods.Add(food16);
+
+            Food food17 = new Food()
+            {
+                FoodName = "Çilek Reçeli",
+                Calorie = 278,
+                Protein = 1,
+                CategoryID = 6,
+                Portion = Portion.Gram,
+                Quantity = 100,
+                FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\CilekReceli.jpg"
+            };
+            yerDBcontext.Foods.Add(food17);
+
+            Food food18 = new Food()
+            {
+                FoodName = "Ketçaplı Patates Cipsi",
+                Calorie = 537,
+                Protein = 6,
+                CategoryID = 7,
+                Portion = Portion.Gram,
+                Quantity = 100,
+                FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\ketcapliPatatesCips.jpg"
+            };
+            yerDBcontext.Foods.Add(food18);
+
+            Food food19 = new Food()
+            {
+                FoodName = "Çikolatalı Gofret",
+                Calorie = 594,
+                Protein = 18,
+                CategoryID = 7,
+                Portion = Portion.Gram,
+                Quantity = 100,
+                FoodImage = @"C:\Users\Rezan Söylemez\Desktop\SaglikliYER\cikolataliGofret.jpg"
+            };
+            yerDBcontext.Foods.Add(food19);
+
             yerDBcontext.SaveChanges();
         }
     }

@@ -91,12 +91,12 @@ namespace SaglikliYER
             // columnHeader1
             // 
             this.columnHeader1.Text = "Portion";
-            this.columnHeader1.Width = 68;
+            this.columnHeader1.Width = 82;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Quantity";
-            this.columnHeader2.Width = 91;
+            this.columnHeader2.Width = 72;
             // 
             // columnHeader6
             // 
@@ -111,7 +111,7 @@ namespace SaglikliYER
             // columnHeader4
             // 
             this.columnHeader4.Text = "Time";
-            this.columnHeader4.Width = 50;
+            this.columnHeader4.Width = 94;
             // 
             // groupBox3
             // 
@@ -209,10 +209,10 @@ namespace SaglikliYER
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox4.ForeColor = System.Drawing.Color.Red;
+            this.groupBox4.ForeColor = System.Drawing.Color.Black;
             this.groupBox4.Location = new System.Drawing.Point(250, 168);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(131, 72);
+            this.groupBox4.Size = new System.Drawing.Size(129, 72);
             this.groupBox4.TabIndex = 27;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Your Total Reports ";
@@ -235,21 +235,21 @@ namespace SaglikliYER
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 50);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(6, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
+            this.label2.Size = new System.Drawing.Size(63, 26);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Total Protein :";
+            this.label2.Text = "Protein :";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 23);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(7, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Total Calorie :";
+            this.label1.Text = "Calorie :";
             // 
             // label3
             // 
@@ -263,7 +263,7 @@ namespace SaglikliYER
             // 
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox5.ForeColor = System.Drawing.Color.Red;
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
             this.groupBox5.Location = new System.Drawing.Point(384, 168);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(118, 72);
@@ -275,7 +275,7 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(590, 244);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

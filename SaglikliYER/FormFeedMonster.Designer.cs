@@ -42,8 +42,6 @@ namespace SaglikliYER
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -61,7 +59,7 @@ namespace SaglikliYER
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(20, 450);
+            this.button2.Location = new System.Drawing.Point(12, 443);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(198, 58);
             this.button2.TabIndex = 17;
@@ -71,10 +69,10 @@ namespace SaglikliYER
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(534, 450);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(317, 429);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(133, 24);
             this.label2.TabIndex = 16;
             this.label2.Text = "Your Score =";
             // 
@@ -125,9 +123,9 @@ namespace SaglikliYER
             this.btnRight.FlatAppearance.BorderSize = 0;
             this.btnRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRight.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btnRight.Location = new System.Drawing.Point(397, 450);
+            this.btnRight.Location = new System.Drawing.Point(724, 429);
             this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(75, 45);
+            this.btnRight.Size = new System.Drawing.Size(85, 59);
             this.btnRight.TabIndex = 10;
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
@@ -138,9 +136,9 @@ namespace SaglikliYER
             this.btnleft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnleft.FlatAppearance.BorderSize = 0;
             this.btnleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnleft.Location = new System.Drawing.Point(316, 450);
+            this.btnleft.Location = new System.Drawing.Point(616, 429);
             this.btnleft.Name = "btnleft";
-            this.btnleft.Size = new System.Drawing.Size(75, 45);
+            this.btnleft.Size = new System.Drawing.Size(82, 59);
             this.btnleft.TabIndex = 11;
             this.btnleft.UseVisualStyleBackColor = true;
             this.btnleft.Click += new System.EventHandler(this.btnleft_Click);
@@ -164,40 +162,20 @@ namespace SaglikliYER
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(535, 471);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(321, 464);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 16);
+            this.label1.Size = new System.Drawing.Size(129, 24);
             this.label1.TabIndex = 18;
             this.label1.Text = "Best Score =";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(282, 464);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 16);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "(A)";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(478, 464);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 16);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "(D)";
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton1.Location = new System.Drawing.Point(6, 30);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 20);
+            this.radioButton1.Size = new System.Drawing.Size(63, 22);
             this.radioButton1.TabIndex = 20;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Easy";
@@ -206,10 +184,10 @@ namespace SaglikliYER
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton2.Location = new System.Drawing.Point(6, 51);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 20);
+            this.radioButton2.Size = new System.Drawing.Size(85, 22);
             this.radioButton2.TabIndex = 20;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Medium";
@@ -218,10 +196,10 @@ namespace SaglikliYER
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton3.Location = new System.Drawing.Point(6, 72);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(60, 20);
+            this.radioButton3.Size = new System.Drawing.Size(62, 22);
             this.radioButton3.TabIndex = 20;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Hard";
@@ -232,8 +210,8 @@ namespace SaglikliYER
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(52, 337);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(44, 330);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(130, 107);
             this.groupBox1.TabIndex = 21;
@@ -244,11 +222,9 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(821, 510);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -291,8 +267,6 @@ namespace SaglikliYER
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;

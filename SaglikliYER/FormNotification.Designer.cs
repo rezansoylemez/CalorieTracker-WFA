@@ -55,12 +55,12 @@ namespace SaglikliYER
             // columnHeader3
             // 
             this.columnHeader3.Text = "Comment";
-            this.columnHeader3.Width = 81;
+            this.columnHeader3.Width = 119;
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "SenderName";
-            this.columnHeader1.Width = 113;
+            this.columnHeader1.Width = 150;
             // 
             // groupBox1
             // 
@@ -105,7 +105,7 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(317, 397);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);

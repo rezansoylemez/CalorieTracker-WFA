@@ -43,8 +43,14 @@ namespace SaglikliYER
         {
             try
             {
-                if (txtPassword1.Text != "" && txtPassword1.Text == txtPassword2.Text)
+                if (txtPassword1.Text != "" &&txtPassword1.Text == txtPassword2.Text)
                 {
+                    if ( DateTime.Now.Year-dateTimeBirth.Value.Year < 12)
+                    {
+                        if (language == "Eng") MessageBox.Show("Children under the age of 12 cannot register.");
+                        else if (language == "Tr") MessageBox.Show("12 yaşından küçükler kayıt olmaz.");
+                        return;
+                    }
                     bool sonuc = userService.UserEmailIfExist(txtEmail.Text);
                     if (sonuc == true)
                     {
@@ -66,7 +72,6 @@ namespace SaglikliYER
                             dUser.Wish = "To Be Fit";
                         else
                         {
-
                             if (language == "Eng") MessageBox.Show("Choose Your Goals");
                             else if (language == "Tr") MessageBox.Show("Hedeflerinizi Seçin");
                             return;
@@ -88,7 +93,10 @@ namespace SaglikliYER
                         else if (radioWoman.Checked) userDetail.Gender = true;
                         userDetail.UserDetailID = dUser.DUserID;
                         userDatailsServece.CAddUserDetail(userDetail);
-                        MessageBox.Show("Completed");
+                        if (language == "Eng")
+                            MessageBox.Show("Sing-Up Completed");
+                        else if (language == "Tr")
+                            MessageBox.Show("Kayıt Tamamlandı");  
                     }
                     txtEmail.Text = "";
                     txtPassword1.Text = "";
@@ -98,8 +106,11 @@ namespace SaglikliYER
                     numBoy.Value = 0;
                     numKilo.Value = 0;
                 }
-                if (language == "Eng") MessageBox.Show("Passwords do not match.");
-                else if(language == "Tr") MessageBox.Show("Şifreler uyuşmuyor."); 
+                else
+                {
+                    if (language == "Eng") MessageBox.Show("Passwords do not match.");
+                    else if (language == "Tr") MessageBox.Show("Şifreler uyuşmuyor.");
+                }
             }
             catch (Exception ex)
             {
@@ -160,8 +171,6 @@ namespace SaglikliYER
         }
         private void txtPassword1_TextChanged(object sender, EventArgs e)
         {
-            lblDerece.Text = PassLevel(txtPassword1.Text);
-
             if (PassLevel(txtPassword1.Text) == "Weak..")
             {
                 if (language == "Eng")

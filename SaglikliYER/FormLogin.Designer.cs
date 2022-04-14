@@ -46,7 +46,7 @@ namespace SaglikliYER
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Silver;
+            this.groupBox2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox2.Controls.Add(this.btnShowPass);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtEmail);
@@ -63,7 +63,7 @@ namespace SaglikliYER
             // 
             // btnShowPass
             // 
-            this.btnShowPass.BackColor = System.Drawing.Color.Silver;
+            this.btnShowPass.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnShowPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowPass.BackgroundImage")));
             this.btnShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowPass.FlatAppearance.BorderSize = 0;
@@ -110,7 +110,7 @@ namespace SaglikliYER
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Silver;
+            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.FlatAppearance.BorderSize = 0;
@@ -161,7 +161,7 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(590, 255);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabel1);

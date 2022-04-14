@@ -134,7 +134,7 @@ namespace SaglikliYER
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Silver;
+            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.FlatAppearance.BorderSize = 0;
@@ -148,7 +148,7 @@ namespace SaglikliYER
             // 
             // btnSignUp
             // 
-            this.btnSignUp.BackColor = System.Drawing.Color.Silver;
+            this.btnSignUp.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignUp.BackgroundImage")));
             this.btnSignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSignUp.FlatAppearance.BorderSize = 0;
@@ -162,12 +162,12 @@ namespace SaglikliYER
             // 
             // btnKacKalori
             // 
-            this.btnKacKalori.BackColor = System.Drawing.Color.Silver;
+            this.btnKacKalori.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnKacKalori.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKacKalori.BackgroundImage")));
             this.btnKacKalori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnKacKalori.FlatAppearance.BorderSize = 0;
             this.btnKacKalori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKacKalori.Location = new System.Drawing.Point(12, 66);
+            this.btnKacKalori.Location = new System.Drawing.Point(12, 92);
             this.btnKacKalori.Name = "btnKacKalori";
             this.btnKacKalori.Size = new System.Drawing.Size(90, 85);
             this.btnKacKalori.TabIndex = 14;
@@ -223,7 +223,7 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(576, 239);
             this.Controls.Add(this.btnEng);
             this.Controls.Add(this.btnTr);
@@ -237,7 +237,6 @@ namespace SaglikliYER
             this.Name = "FormGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiris";
-            this.Load += new System.EventHandler(this.FormGiris_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

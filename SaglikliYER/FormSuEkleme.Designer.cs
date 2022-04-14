@@ -58,6 +58,7 @@ namespace SaglikliYER
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button15);
             this.groupBox1.Controls.Add(this.button14);
@@ -99,7 +100,7 @@ namespace SaglikliYER
             // 
             // button15
             // 
-            this.button15.BackColor = System.Drawing.Color.Silver;
+            this.button15.BackColor = System.Drawing.Color.Transparent;
             this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.FlatAppearance.BorderSize = 0;
@@ -113,7 +114,7 @@ namespace SaglikliYER
             // 
             // button14
             // 
-            this.button14.BackColor = System.Drawing.Color.Silver;
+            this.button14.BackColor = System.Drawing.Color.Transparent;
             this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.FlatAppearance.BorderSize = 0;
@@ -127,7 +128,7 @@ namespace SaglikliYER
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.Color.Silver;
+            this.button13.BackColor = System.Drawing.Color.Transparent;
             this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.FlatAppearance.BorderSize = 0;
@@ -141,7 +142,7 @@ namespace SaglikliYER
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.Color.Silver;
+            this.button12.BackColor = System.Drawing.Color.Transparent;
             this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.FlatAppearance.BorderSize = 0;
@@ -155,7 +156,7 @@ namespace SaglikliYER
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.Silver;
+            this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button11.FlatAppearance.BorderSize = 0;
@@ -169,7 +170,7 @@ namespace SaglikliYER
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.Silver;
+            this.button10.BackColor = System.Drawing.Color.Transparent;
             this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.FlatAppearance.BorderSize = 0;
@@ -183,7 +184,7 @@ namespace SaglikliYER
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.Silver;
+            this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.FlatAppearance.BorderSize = 0;
@@ -197,7 +198,7 @@ namespace SaglikliYER
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Silver;
+            this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.FlatAppearance.BorderSize = 0;
@@ -211,7 +212,7 @@ namespace SaglikliYER
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Silver;
+            this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.FlatAppearance.BorderSize = 0;
@@ -225,7 +226,7 @@ namespace SaglikliYER
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Silver;
+            this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.FlatAppearance.BorderSize = 0;
@@ -239,7 +240,7 @@ namespace SaglikliYER
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
+            this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatAppearance.BorderSize = 0;
@@ -253,7 +254,7 @@ namespace SaglikliYER
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatAppearance.BorderSize = 0;
@@ -267,7 +268,7 @@ namespace SaglikliYER
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderSize = 0;
@@ -281,7 +282,7 @@ namespace SaglikliYER
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
@@ -342,7 +343,7 @@ namespace SaglikliYER
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -361,7 +362,7 @@ namespace SaglikliYER
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(459, 34);
+            this.btnBack.Location = new System.Drawing.Point(459, 21);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(119, 30);
             this.btnBack.TabIndex = 10;
@@ -372,7 +373,7 @@ namespace SaglikliYER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(590, 244);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);

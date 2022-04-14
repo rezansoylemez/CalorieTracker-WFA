@@ -69,7 +69,6 @@ namespace SaglikliYER
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.lbDeneme = new System.Windows.Forms.Label();
             this.groupBox7.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -89,9 +88,9 @@ namespace SaglikliYER
             // 
             this.groupBox7.Controls.Add(this.btnChallange);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox7.Location = new System.Drawing.Point(288, 14);
+            this.groupBox7.Location = new System.Drawing.Point(279, 20);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(133, 108);
+            this.groupBox7.Size = new System.Drawing.Size(133, 102);
             this.groupBox7.TabIndex = 16;
             this.groupBox7.TabStop = false;
             // 
@@ -101,9 +100,9 @@ namespace SaglikliYER
             this.btnChallange.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChallange.FlatAppearance.BorderSize = 0;
             this.btnChallange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChallange.Location = new System.Drawing.Point(29, 24);
+            this.btnChallange.Location = new System.Drawing.Point(30, 31);
             this.btnChallange.Name = "btnChallange";
-            this.btnChallange.Size = new System.Drawing.Size(76, 66);
+            this.btnChallange.Size = new System.Drawing.Size(74, 64);
             this.btnChallange.TabIndex = 13;
             this.btnChallange.UseVisualStyleBackColor = true;
             this.btnChallange.Click += new System.EventHandler(this.btnChallange_Click);
@@ -112,9 +111,9 @@ namespace SaglikliYER
             // 
             this.groupBox9.Controls.Add(this.btnMeal);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox9.Location = new System.Drawing.Point(17, 14);
+            this.groupBox9.Location = new System.Drawing.Point(9, 20);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(130, 108);
+            this.groupBox9.Size = new System.Drawing.Size(128, 103);
             this.groupBox9.TabIndex = 16;
             this.groupBox9.TabStop = false;
             // 
@@ -125,9 +124,9 @@ namespace SaglikliYER
             this.btnMeal.FlatAppearance.BorderSize = 0;
             this.btnMeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMeal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMeal.Location = new System.Drawing.Point(30, 25);
+            this.btnMeal.Location = new System.Drawing.Point(31, 32);
             this.btnMeal.Name = "btnMeal";
-            this.btnMeal.Size = new System.Drawing.Size(76, 62);
+            this.btnMeal.Size = new System.Drawing.Size(74, 60);
             this.btnMeal.TabIndex = 13;
             this.btnMeal.UseVisualStyleBackColor = true;
             this.btnMeal.Click += new System.EventHandler(this.btnMeal_Click);
@@ -136,9 +135,9 @@ namespace SaglikliYER
             // 
             this.groupBox10.Controls.Add(this.btnReports);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox10.Location = new System.Drawing.Point(153, 15);
+            this.groupBox10.Location = new System.Drawing.Point(143, 21);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(129, 108);
+            this.groupBox10.Size = new System.Drawing.Size(129, 102);
             this.groupBox10.TabIndex = 16;
             this.groupBox10.TabStop = false;
             // 
@@ -148,9 +147,9 @@ namespace SaglikliYER
             this.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Location = new System.Drawing.Point(24, 23);
+            this.btnReports.Location = new System.Drawing.Point(25, 30);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(76, 63);
+            this.btnReports.Size = new System.Drawing.Size(74, 61);
             this.btnReports.TabIndex = 13;
             this.btnReports.UseVisualStyleBackColor = true;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
@@ -162,7 +161,7 @@ namespace SaglikliYER
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.Location = new System.Drawing.Point(469, 204);
+            this.btnBack.Location = new System.Drawing.Point(479, 182);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(93, 33);
             this.btnBack.TabIndex = 30;
@@ -175,9 +174,9 @@ namespace SaglikliYER
             this.btnCalculator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCalculator.FlatAppearance.BorderSize = 0;
             this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalculator.Location = new System.Drawing.Point(29, 22);
+            this.btnCalculator.Location = new System.Drawing.Point(30, 29);
             this.btnCalculator.Name = "btnCalculator";
-            this.btnCalculator.Size = new System.Drawing.Size(76, 63);
+            this.btnCalculator.Size = new System.Drawing.Size(74, 61);
             this.btnCalculator.TabIndex = 13;
             this.btnCalculator.UseVisualStyleBackColor = true;
             this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
@@ -187,9 +186,9 @@ namespace SaglikliYER
             this.groupBox3.Controls.Add(this.btnCalculator);
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(288, 130);
+            this.groupBox3.Location = new System.Drawing.Point(278, 121);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(131, 97);
+            this.groupBox3.Size = new System.Drawing.Size(131, 108);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             // 
@@ -214,9 +213,9 @@ namespace SaglikliYER
             this.btnAddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddFood.FlatAppearance.BorderSize = 0;
             this.btnAddFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFood.Location = new System.Drawing.Point(24, 21);
+            this.btnAddFood.Location = new System.Drawing.Point(25, 28);
             this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(76, 63);
+            this.btnAddFood.Size = new System.Drawing.Size(74, 61);
             this.btnAddFood.TabIndex = 13;
             this.btnAddFood.UseVisualStyleBackColor = true;
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
@@ -226,9 +225,9 @@ namespace SaglikliYER
             this.groupBox4.Controls.Add(this.btnAddFood);
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox4.Location = new System.Drawing.Point(150, 129);
+            this.groupBox4.Location = new System.Drawing.Point(141, 121);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(131, 96);
+            this.groupBox4.Size = new System.Drawing.Size(131, 108);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             // 
@@ -249,22 +248,21 @@ namespace SaglikliYER
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox8);
             this.groupBox1.Controls.Add(this.btnDrinkWater);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(19, 129);
+            this.groupBox1.Location = new System.Drawing.Point(9, 121);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(128, 97);
+            this.groupBox1.Size = new System.Drawing.Size(128, 108);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
             // groupBox8
             // 
-            this.groupBox8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox8.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox8.Controls.Add(this.label7);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox8.Location = new System.Drawing.Point(2, 0);
+            this.groupBox8.Location = new System.Drawing.Point(9, 127);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(128, 98);
             this.groupBox8.TabIndex = 34;
@@ -286,9 +284,9 @@ namespace SaglikliYER
             this.btnDrinkWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDrinkWater.FlatAppearance.BorderSize = 0;
             this.btnDrinkWater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDrinkWater.Location = new System.Drawing.Point(23, 21);
+            this.btnDrinkWater.Location = new System.Drawing.Point(29, 29);
             this.btnDrinkWater.Name = "btnDrinkWater";
-            this.btnDrinkWater.Size = new System.Drawing.Size(76, 63);
+            this.btnDrinkWater.Size = new System.Drawing.Size(74, 61);
             this.btnDrinkWater.TabIndex = 13;
             this.btnDrinkWater.UseVisualStyleBackColor = true;
             this.btnDrinkWater.Click += new System.EventHandler(this.btnDrinkWater_Click);
@@ -315,7 +313,7 @@ namespace SaglikliYER
             this.btnNotif.FlatAppearance.BorderSize = 0;
             this.btnNotif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnNotif.Location = new System.Drawing.Point(472, 15);
+            this.btnNotif.Location = new System.Drawing.Point(469, 15);
             this.btnNotif.Name = "btnNotif";
             this.btnNotif.Size = new System.Drawing.Size(44, 33);
             this.btnNotif.TabIndex = 30;
@@ -329,7 +327,7 @@ namespace SaglikliYER
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(469, 66);
+            this.button2.Location = new System.Drawing.Point(466, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(44, 33);
             this.button2.TabIndex = 30;
@@ -343,7 +341,7 @@ namespace SaglikliYER
             this.btnOyun.FlatAppearance.BorderSize = 0;
             this.btnOyun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOyun.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOyun.Location = new System.Drawing.Point(519, 57);
+            this.btnOyun.Location = new System.Drawing.Point(516, 57);
             this.btnOyun.Name = "btnOyun";
             this.btnOyun.Size = new System.Drawing.Size(53, 43);
             this.btnOyun.TabIndex = 30;
@@ -356,7 +354,7 @@ namespace SaglikliYER
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(516, 8);
+            this.button1.Location = new System.Drawing.Point(513, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 47);
             this.button1.TabIndex = 32;
@@ -369,32 +367,33 @@ namespace SaglikliYER
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.groupBox5);
-            this.groupBox2.Controls.Add(this.grpYourReport);
+            this.groupBox2.Controls.Add(this.groupBox8);
             this.groupBox2.Controls.Add(this.groupBox6);
             this.groupBox2.Controls.Add(this.grpChallenge);
-            this.groupBox2.Controls.Add(this.groupBox7);
+            this.groupBox2.Controls.Add(this.grpYourReport);
             this.groupBox2.Controls.Add(this.grpEatMeal);
-            this.groupBox2.Controls.Add(this.groupBox10);
             this.groupBox2.Controls.Add(this.groupBox9);
+            this.groupBox2.Controls.Add(this.groupBox5);
+            this.groupBox2.Controls.Add(this.groupBox7);
+            this.groupBox2.Controls.Add(this.groupBox10);
             this.groupBox2.Controls.Add(this.groupBox1);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 25);
+            this.groupBox2.Location = new System.Drawing.Point(12, 15);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(431, 233);
+            this.groupBox2.Size = new System.Drawing.Size(422, 237);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
             // groupBox5
             // 
-            this.groupBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox5.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox5.Location = new System.Drawing.Point(296, 129);
+            this.groupBox5.Location = new System.Drawing.Point(281, 128);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(123, 98);
+            this.groupBox5.Size = new System.Drawing.Size(128, 98);
             this.groupBox5.TabIndex = 34;
             this.groupBox5.TabStop = false;
             this.groupBox5.Visible = false;
@@ -410,10 +409,10 @@ namespace SaglikliYER
             // 
             // grpYourReport
             // 
-            this.grpYourReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.grpYourReport.BackColor = System.Drawing.Color.LightSkyBlue;
             this.grpYourReport.Controls.Add(this.label2);
             this.grpYourReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.grpYourReport.Location = new System.Drawing.Point(152, 20);
+            this.grpYourReport.Location = new System.Drawing.Point(144, 23);
             this.grpYourReport.Name = "grpYourReport";
             this.grpYourReport.Size = new System.Drawing.Size(128, 98);
             this.grpYourReport.TabIndex = 34;
@@ -432,12 +431,12 @@ namespace SaglikliYER
             // 
             // groupBox6
             // 
-            this.groupBox6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox6.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox6.Controls.Add(this.label6);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox6.Location = new System.Drawing.Point(157, 128);
+            this.groupBox6.Location = new System.Drawing.Point(143, 129);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(128, 98);
+            this.groupBox6.Size = new System.Drawing.Size(128, 97);
             this.groupBox6.TabIndex = 34;
             this.groupBox6.TabStop = false;
             this.groupBox6.Visible = false;
@@ -453,10 +452,10 @@ namespace SaglikliYER
             // 
             // grpChallenge
             // 
-            this.grpChallenge.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.grpChallenge.BackColor = System.Drawing.Color.LightSkyBlue;
             this.grpChallenge.Controls.Add(this.label3);
             this.grpChallenge.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.grpChallenge.Location = new System.Drawing.Point(291, 20);
+            this.grpChallenge.Location = new System.Drawing.Point(282, 21);
             this.grpChallenge.Name = "grpChallenge";
             this.grpChallenge.Size = new System.Drawing.Size(128, 98);
             this.grpChallenge.TabIndex = 34;
@@ -475,10 +474,10 @@ namespace SaglikliYER
             // 
             // grpEatMeal
             // 
-            this.grpEatMeal.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.grpEatMeal.BackColor = System.Drawing.Color.LightSkyBlue;
             this.grpEatMeal.Controls.Add(this.label1);
             this.grpEatMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.grpEatMeal.Location = new System.Drawing.Point(13, 21);
+            this.grpEatMeal.Location = new System.Drawing.Point(9, 24);
             this.grpEatMeal.Name = "grpEatMeal";
             this.grpEatMeal.Size = new System.Drawing.Size(128, 98);
             this.grpEatMeal.TabIndex = 34;
@@ -497,9 +496,10 @@ namespace SaglikliYER
             // 
             // label4
             // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(171, 9);
+            this.label4.Location = new System.Drawing.Point(166, 4);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(217, 18);
             this.label4.TabIndex = 35;
@@ -512,30 +512,19 @@ namespace SaglikliYER
             // 
             // timer3
             // 
+            this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // timer4
             // 
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
-            // lbDeneme
-            // 
-            this.lbDeneme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbDeneme.ForeColor = System.Drawing.Color.Red;
-            this.lbDeneme.Location = new System.Drawing.Point(456, 115);
-            this.lbDeneme.Name = "lbDeneme";
-            this.lbDeneme.Size = new System.Drawing.Size(106, 33);
-            this.lbDeneme.TabIndex = 35;
-            this.lbDeneme.Text = "You Are Level Up. WellDone!!!";
-            this.lbDeneme.Visible = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(590, 262);
-            this.Controls.Add(this.lbDeneme);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(589, 260);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnNotif);
             this.Controls.Add(this.btnOyun);
@@ -605,6 +594,5 @@ namespace SaglikliYER
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Timer timer4;
-        private System.Windows.Forms.Label lbDeneme;
     }
 }

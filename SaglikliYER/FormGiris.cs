@@ -105,13 +105,5 @@ namespace SaglikliYER
         {
             language = "Tr";
         }
-        private void FormGiris_Load(object sender, EventArgs e)
-        {
-            this.BackColor = ColorTranslator.FromHtml("#5998C5");
-            btnKacKalori.BackColor= ColorTranslator.FromHtml("#648DE5");
-            btnLogin.BackColor= ColorTranslator.FromHtml("#648DE5");
-            btnSignUp.BackColor= ColorTranslator.FromHtml("#648DE5");
-            btnSesAc.BackColor= ColorTranslator.FromHtml("#648DE5");
-        }
     }
 }

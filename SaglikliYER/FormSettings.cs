@@ -115,7 +115,6 @@ namespace SaglikliYER
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnUpdateUser_Click(object sender, EventArgs e)
         {
             try
@@ -144,12 +143,21 @@ namespace SaglikliYER
         {
             this.Owner.Show();
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
-            FormGiris formGiris = new FormGiris();
-            this.Close();
-            formGiris.Show();
+            Application.Exit();
+            //panelAdmin.Visible = false;
+            //panelDietician.Visible = false;
+            //panelUser.Visible = false;
+            //var formForClose = Application.OpenForms.OfType<Form>().ToList();
+            //foreach (var item in formForClose)
+            //{
+            //    if (item.Name != "MainForm")
+            //    {
+            //        item.Close();
+            //    }
+            //}
+            //GetForm1();
         }
     }
 }

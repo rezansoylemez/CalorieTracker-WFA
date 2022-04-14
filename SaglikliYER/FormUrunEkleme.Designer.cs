@@ -365,10 +365,12 @@ namespace SaglikliYER
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox2.Location = new System.Drawing.Point(2, 1);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(678, 279);

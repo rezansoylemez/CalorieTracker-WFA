@@ -16,34 +16,34 @@ namespace YerNTier.BLL.Services
         {
             mealRepository = new MealRepository();
         }
-        public Meal AddFoodsToMeals(Meal meal, EatenFood _Efood)
+        public Meal AddFoodsToMeals(Meal _meal, EatenFood _Efood)
         {
-            if (meal != null)
+            if (_meal != null)
             {
                 if (_Efood != null)
                 {
-                    return mealRepository.AddFoodsToMeals(meal, _Efood);
+                    return mealRepository.AddFoodsToMeals(_meal, _Efood);
                 }
                 else throw new Exception("Please check your eaten food.");
             }
             else throw new Exception("Please check your meal.");
         }
-        public Meal GetByMealId(int mealID)
+        public Meal GetByMealId(int _mealID)
         {
-            if (mealID >= 0)
+            if (_mealID >= 0)
             {
-                Meal meal = mealRepository.GetByMealId(mealID);
+                Meal meal = mealRepository.GetByMealId(_mealID);
                 return meal;
             }
             else throw new Exception("Please choose a meal from meal list.");
         }
-        public List<Meal> GetById(int userID)
+        public List<Meal> GetById(int _userID)
         {
             List<Meal> meals = new List<Meal>();
 
-            if (userID > 0)
+            if (_userID > 0)
             {
-                meals = mealRepository.GetByUserId(userID);
+                meals = mealRepository.GetByUserId(_userID);
             }
             else
             {
@@ -51,15 +51,15 @@ namespace YerNTier.BLL.Services
             }
             return meals;
         }
-        void CheckMeal(Meal meal)
+        void CheckMeal(Meal _meal)
         {
-            if (string.IsNullOrWhiteSpace(meal.MealName) || string.IsNullOrWhiteSpace(meal.MealDate.ToString())
+            if (string.IsNullOrWhiteSpace(_meal.MealName) || string.IsNullOrWhiteSpace(_meal.MealDate.ToString())
                 ) throw new Exception("Please check your meal.");
         }
-        public bool Insert(Meal meal)
+        public bool Insert(Meal _meal)
         {
-            CheckMeal(meal);
-            return mealRepository.Insert(meal);
+            CheckMeal(_meal);
+            return mealRepository.Insert(_meal);
         }
         public bool CDelete(Meal _meal)
         {

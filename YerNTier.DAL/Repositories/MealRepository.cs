@@ -15,14 +15,14 @@ namespace YerNTier.DAL.Repositories
             context = new YerDBContext();
         }
         
-        public List<Meal> GetByUserId(int userID)
+        public List<Meal> GetByUserId(int _userID)
         {
-            return context.Meals.Where(a => a.DUserID == userID).ToList();
+            return context.Meals.Where(a => a.DUserID == _userID).ToList();
         }
 
-        public Meal GetByMealId(int mealID)
+        public Meal GetByMealId(int _mealID)
         {
-            return context.Meals.Where(x=> x.MealID == mealID).FirstOrDefault();
+            return context.Meals.Where(x=> x.MealID == _mealID).FirstOrDefault();
         }
 
         public bool Insert(Meal meal)
@@ -30,21 +30,21 @@ namespace YerNTier.DAL.Repositories
             context.Meals.Add(meal);
             return context.SaveChanges() > 0;
         }
-        public bool Delete(Meal meal)
+        public bool Delete(Meal _meal)
         {
-            Meal deletedMeal = context.Meals.Find(meal.MealID);
+            Meal deletedMeal = context.Meals.Find(_meal.MealID);
             context.Meals.Remove(deletedMeal); 
             return context.SaveChanges() > 0;
         }
 
-        public List<Meal> GetMealsForDailyByUserId(int userID)
+        public List<Meal> GetMealsForDailyByUserId(int _userID)
         {
-            return context.Meals.Where(a => a.DUserID == userID && a.MealDate.Day == DateTime.Now.Day).ToList();
+            return context.Meals.Where(a => a.DUserID == _userID && a.MealDate.Day == DateTime.Now.Day).ToList();
         }
 
-        public List<Meal> GetMealsForMonthByUserId(int userID)
+        public List<Meal> GetMealsForMonthByUserId(int _userID)
         {
-            return context.Meals.Where(a => a.DUserID == userID && a.MealDate.Month == DateTime.Now.Month).ToList();
+            return context.Meals.Where(a => a.DUserID == _userID && a.MealDate.Month == DateTime.Now.Month).ToList();
         }
 
         public DateTime FirstDayOfWeek()
@@ -82,9 +82,9 @@ namespace YerNTier.DAL.Repositories
         {
             return context.EatenFoods.Find(_eatenFoodID);
         }
-        public bool Update(int eatenFoodID ,EatenFood _eatenFood)
+        public bool Update(int _eatenFoodID ,EatenFood _eatenFood)
         {
-            EatenFood updatedEatenFood = context.EatenFoods.Find(eatenFoodID);
+            EatenFood updatedEatenFood = context.EatenFoods.Find(_eatenFoodID);
             updatedEatenFood.EatenCategoryID = _eatenFood.EatenCategoryID;
             updatedEatenFood.EatenColorie = _eatenFood.EatenColorie;
             updatedEatenFood.EatenFoodName = _eatenFood.EatenFoodName;

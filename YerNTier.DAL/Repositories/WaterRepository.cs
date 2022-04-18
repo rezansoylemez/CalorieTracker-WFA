@@ -15,8 +15,6 @@ namespace YerNTier.DAL.Repositories
             context = new YerDBContext();
         }
 
-        
-        //form açılırken içilen suyu yazdırmak
         public int GetWater(int UserID)
         {
             Water water = context.Waters.Where(a => a.DUserID == UserID && a.DrinkTime.Day == DateTime.Now.Day).FirstOrDefault();
@@ -31,11 +29,10 @@ namespace YerNTier.DAL.Repositories
             }
             return water.Quantity;
         }
-        //formu kapatırken eklenen suyu database aktarmak
-        public bool UpdateWater(int userID, int quantity)
+        public bool UpdateWater(int _userID, int _quantity)
         {
-            Water water = context.Waters.Where(a => a.DUserID == userID).FirstOrDefault();
-            water.Quantity = quantity;
+            Water water = context.Waters.Where(a => a.DUserID == _userID).FirstOrDefault();
+            water.Quantity = _quantity;
 
             return context.SaveChanges() > 0;
         }

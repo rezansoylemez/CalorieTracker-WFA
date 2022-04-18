@@ -24,18 +24,18 @@ namespace YerNTier.BLL.Services
             }
             else throw new Exception("Please check your UserID.");
         }
-        public List<Food> GetFoodsByTextCheck(string text)
+        public List<Food> GetFoodsByTextCheck(string _text)
         {
-            List<Food> foods = foodRepository.GetFoodsByText(text);
+            List<Food> foods = foodRepository.GetFoodsByText(_text);
             if (foods != null)
             {
                 return foods;
             }
             else throw new Exception("Please check your text.");
         }
-        public Food GetByFoodIdCheck(int foodID)
+        public Food GetByFoodIdCheck(int _foodID)
         {
-            Food food = foodRepository.GetByFoodId(foodID);
+            Food food = foodRepository.GetByFoodId(_foodID);
             if (food != null)
             {
                 return food;
@@ -50,12 +50,12 @@ namespace YerNTier.BLL.Services
             else
                 return true;
         }
-        public void Insert(Food food)
+        public void Insert(Food _food)
         {
-            if (CheckFood(food) == false)
+            if (CheckFood(_food) == false)
                 throw new Exception("Inserting food failed.");
-            else if (CheckFood(food) == true)
-                  foodRepository.Insert(food); 
+            else if (CheckFood(_food) == true)
+                  foodRepository.Insert(_food); 
         }
         public bool Update(Food _food)
         {

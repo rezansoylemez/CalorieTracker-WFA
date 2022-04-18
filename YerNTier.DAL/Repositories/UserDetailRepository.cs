@@ -14,9 +14,9 @@ namespace YerNTier.DAL.Repositories
         {
             context = new YerDBContext();
         }
-        public bool AddUserDetail(UserDetail userDetail)
+        public bool AddUserDetail(UserDetail _userDetail)
         {
-            context.UserDetails.Add(userDetail);
+            context.UserDetails.Add(_userDetail);
             return context.SaveChanges() > 0;
         }
         public bool UpdateUserDetail(UserDetail _userDetail)

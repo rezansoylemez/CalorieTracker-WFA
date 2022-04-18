@@ -24,9 +24,9 @@ namespace YerNTier.DAL.Repositories
             return context.Foods.Where(a => a.FoodName.Contains(text)).ToList();
         }
 
-        public Food GetByFoodId(int foodID)
+        public Food GetByFoodId(int _foodID)
         {
-            return context.Foods.Find(foodID);
+            return context.Foods.Find(_foodID);
         }
 
         public bool Insert(Food _food)
@@ -46,15 +46,15 @@ namespace YerNTier.DAL.Repositories
             return context.SaveChanges() > 0;
         }
 
-        public bool Delete(Food food)
+        public bool Delete(Food _food)
         {
-            Food deletedFood = context.Foods.Find(food.FoodID);
+            Food deletedFood = context.Foods.Find(_food.FoodID);
             context.Foods.Remove(deletedFood);
             return context.SaveChanges() > 0;
         }
-        public bool InsertFoodCategory(FoodCategory foodCategory)
+        public bool InsertFoodCategory(FoodCategory _foodCategory)
         {
-            context.FoodCategories.Add(foodCategory);
+            context.FoodCategories.Add(_foodCategory);
             return context.SaveChanges() > 0;
         }
         public List<FoodCategory> GetFoodCategories()

@@ -42,13 +42,13 @@ namespace YerNTier.BLL.Services
             }
             else throw new Exception("Please check your wish.");
         }
-        public List<DUser> GetUserForChallengeAndKey(string _wish, string text)
+        public List<DUser> GetUserForChallengeAndKey(string _wish, string _text)
         {
             if (_wish != "")
             {
-                if (text != "")
+                if (_text != "")
                 {
-                    return userRepository.GetUserForChallengeAndKey(_wish, text);
+                    return userRepository.GetUserForChallengeAndKey(_wish, _text);
                 }
                 else throw new Exception("Please check your text.");
             }

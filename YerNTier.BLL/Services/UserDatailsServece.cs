@@ -15,10 +15,10 @@ namespace YerNTier.BLL.Services
         {
             userDetailRepository = new UserDetailRepository();
         }
-        public bool CAddUserDetail(UserDetail userDetail)
+        public bool CAddUserDetail(UserDetail _userDetail)
         {
-            if (userDetail != null)
-                return userDetailRepository.AddUserDetail(userDetail);
+            if (_userDetail != null)
+                return userDetailRepository.AddUserDetail(_userDetail);
             else throw new Exception("Please check your user detail.");
         }
         public bool CUpdateUserDetails(UserDetail _userDetail)

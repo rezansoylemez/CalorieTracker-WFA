@@ -60,11 +60,11 @@ namespace YerNTier.DAL.Repositories
 
             return lastDay;
         }
-        public List<Meal> GetMealsForWeekByUserId(int userID)
+        public List<Meal> GetMealsForWeekByUserId(int _userID)
         {
             DateTime fdt = FirstDayOfWeek();
             DateTime ldt = LastDayOfWeek();
-            return context.Meals.Where(a => a.MealDate < ldt && a.MealDate > fdt).ToList();
+            return context.Meals.Where(a => a.MealDate < ldt && a.MealDate > fdt && a.DUserID==_userID).ToList();
         }
         public List<Meal> GetByDate(DateTime date,int _userID)
         {
